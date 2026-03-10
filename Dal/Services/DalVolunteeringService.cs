@@ -1,5 +1,6 @@
 ﻿using Dal.Api;
 using Dal.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,7 +53,7 @@ namespace Dal.Services
 
         public async Task<Volunteering> Read(int id)
         {
-            Volunteering v = mydb.Volunteerings.Find(v => v.VolunteerCode == id);
+            Volunteering v =await mydb.Volunteerings.FirstOrDefaultAsync(v => v.VolunteerCode == id);
             return v;
         }
         public async Task<List<Volunteering>> ReadAll()

@@ -60,11 +60,7 @@ namespace Dal.Services
             return e;
         }
 
-        public object Read(Bl.BLModels.BlEichudModel item)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         public async Task<List<Eichud>> ReadAll()
         {
             return dbm.Eichuds.ToList();

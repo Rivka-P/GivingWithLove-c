@@ -15,5 +15,8 @@ namespace Dal.Api
         public DalSubProjectInterface SubProject { get; }
         public DalPositionInterface Position { get; }
 
+        //public DalProjectInterface Project { get; }
+
+
     }
 }

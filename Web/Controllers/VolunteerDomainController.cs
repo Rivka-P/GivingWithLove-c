@@ -25,9 +25,9 @@ namespace Web.Controllers
 
         // GET api/<VolunteeringController>/5
         [HttpGet("{id}")]
-        public BlVolunteerDomainModel Get(int id)
+        public Task<BlVolunteerDomainModel> Get(int id)
         {
-            return bl.VolunteerDomains.Read(id).Result;
+            return bl.VolunteerDomains.Read(id);
         }
 
         // POST api/<VolunteeringController>
@@ -49,7 +49,7 @@ namespace Web.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            bl.VolunteerDomains.Delete(Get(id));
+            bl.VolunteerDomains.Delete(Get(id).Result);
         }
     }
 }

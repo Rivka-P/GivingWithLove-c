@@ -9,6 +9,6 @@ namespace Dal.Api
 {
     public interface DalEichudInterface : ICrud<Eichud>
     {
-        object Read(global::Bl.BLModels.BlEichudModel item);
+        //object Read(global::Bl.BLModels.BlEichudModel item);
     }
 }

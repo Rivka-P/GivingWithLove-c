@@ -23,6 +23,7 @@ namespace Bl
             services.AddSingleton<BlEichudInterface, BlEichudService>();
             services.AddSingleton<BlVolunteeringInterface, BlVolunteeringService>();
             services.AddSingleton<BlVolunteerDomainInterface, BlVolunteerDomainService>();
+            services.AddSingleton<BlSubProjectInterface, BlSubProjectService>();
 
 
 

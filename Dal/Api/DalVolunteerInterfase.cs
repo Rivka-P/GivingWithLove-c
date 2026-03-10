@@ -10,6 +10,5 @@ namespace Dal.Api
     public interface DalSubProjectInterfase:ICrud<Volunteer>
     {
 
-
     }
 }

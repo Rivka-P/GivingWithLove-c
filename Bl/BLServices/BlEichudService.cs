@@ -83,7 +83,7 @@ namespace Bl.BLServices
 
         public async Task<BlEichudModel> Read(BlEichudModel item)
         {
-            return convert(dal.Read(convert(item)).Result);
+            return convert(dal.Read(convert(item).EichudCode).Result);
         }
 
         public async Task<List<BlEichudModel>> ReadAll()
@@ -98,6 +98,11 @@ namespace Bl.BLServices
         public void Update(BlEichudModel item)
         {
             dal.Update(convert(item));
+        }
+
+        public Task<BlEichudModel> Read(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

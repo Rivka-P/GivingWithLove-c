@@ -13,6 +13,6 @@ namespace Bl.BLModels
 
         public string PositionName { get; set; } = null!;
 
-        public virtual ICollection<Volunteer> Volunteers { get; set; } = new List<Volunteer>();
+        //public virtual ICollection<Volunteer> Volunteers { get; set; } = new List<Volunteer>();
     }
 }

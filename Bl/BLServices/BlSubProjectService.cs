@@ -5,22 +5,25 @@ using Dal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl.BLServices
 {
     public class BlSubProjectService : BlSubProjectInterface
     {
-        private DalSubProjectInterfase SubProject;
+        private DalSubProjectInterface SubProject;
+
         public BlSubProjectService(IDal dal)
         {
-            this.SubProject = (DalSubProjectInterfase?)dal.SubProject;
+            this.SubProject = dal.SubProject;
         }
 
         private SubProject Convert(BlSubProjectModel s)
         {
-            return new SubProject() {
+            if (s == null) return null;
+
+            return new SubProject()
+            {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,
@@ -28,9 +31,13 @@ namespace Bl.BLServices
                 EstimatedCost = s.EstimatedCost
             };
         }
+
         private BlSubProjectModel Convert(SubProject s)
         {
-            return new BlSubProjectModel() {
+            if (s == null) return null;
+
+            return new BlSubProjectModel()
+            {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,
@@ -38,8 +45,11 @@ namespace Bl.BLServices
                 EstimatedCost = s.EstimatedCost
             };
         }
+
         private List<BlSubProjectModel> Convert(List<SubProject> c)
         {
+            if (c == null) return new List<BlSubProjectModel>();
+
             List<BlSubProjectModel> list = new List<BlSubProjectModel>();
             foreach (var item in c)
             {
@@ -48,35 +58,38 @@ namespace Bl.BLServices
             return list;
         }
 
-
-        public void Delete(BlSubProjectModel item)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Create(BlSubProjectModel item)
         {
             SubProject.Create(Convert(item));
         }
 
+        public void Delete(BlSubProjectModel item)
+        {
+            SubProject.Delete(Convert(item));
+        }
+
         public void Update(BlSubProjectModel item)
         {
-            throw new NotImplementedException();
+            SubProject.Update(Convert(item));
         }
 
         public async Task<BlSubProjectModel> Read(int id)
         {
-            throw new NotImplementedException();
+            var result = await SubProject.Read(id);
+            return Convert(result);
         }
 
         public async Task<List<BlSubProjectModel>> ReadAll()
         {
-            throw new NotImplementedException();
+            var list = await SubProject.ReadAll();
+            return Convert(list);
         }
 
         public async Task<List<BlSubProjectModel>> Read(Func<BlSubProjectModel, bool> func)
         {
-            throw new NotImplementedException();
+            var list = await SubProject.ReadAll();
+            var blList = Convert(list);
+            return blList.Where(func).ToList();
         }
     }
 }

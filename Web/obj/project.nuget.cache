@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/wIczkADNdw=",
+  "dgSpecHash": "vku0Z1EsQYg=",
   "success": true,
-  "projectFilePath": "F:\\תיקייה כללית חדש\\שנה א תשפה\\תלמידות\\#PROJECTS\\New folder\\Web\\Web.csproj",
+  "projectFilePath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\פינטר רבקי\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\פינטר רבקי\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

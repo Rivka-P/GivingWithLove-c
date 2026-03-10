@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\תיקייה כללית חדש\\שנה א תשפה\\תלמידות\\#PROJECTS\\New folder\\Dal\\Dal.csproj": {}
+    "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj": {}
   },
   "projects": {
-    "F:\\תיקייה כללית חדש\\שנה א תשפה\\תלמידות\\#PROJECTS\\New folder\\Dal\\Dal.csproj": {
+    "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\תיקייה כללית חדש\\שנה א תשפה\\תלמידות\\#PROJECTS\\New folder\\Dal\\Dal.csproj",
+        "projectUniqueName": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj",
         "projectName": "Dal",
-        "projectPath": "F:\\תיקייה כללית חדש\\שנה א תשפה\\תלמידות\\#PROJECTS\\New folder\\Dal\\Dal.csproj",
+        "projectPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj",
         "packagesPath": "C:\\Users\\פינטר רבקי\\.nuget\\packages\\",
-        "outputPath": "F:\\תיקייה כללית חדש\\שנה א תשפה\\תלמידות\\#PROJECTS\\New folder\\Dal\\obj\\",
+        "outputPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
