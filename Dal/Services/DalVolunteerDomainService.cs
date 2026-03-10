@@ -52,7 +52,9 @@ namespace Dal.Services
 
         public async Task<VolunteerDomain> Read(int id)
         {
-            return mydb.VolunteerDomains.Find(v => v.VolunteerCode == id);
+            
+             VolunteerDomain vm =  mydb.VolunteerDomains.ToList().Find(v => v.VolunteerCode == id)?? throw new ObjectNotFoundException();
+            return vm;
         }
         public async Task<List<VolunteerDomain>> ReadAll()
         {

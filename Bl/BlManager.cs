@@ -2,6 +2,7 @@
 using Bl.BLServices;
 using Dal;
 using Dal.Api;
+using Dal.Models;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Bl
@@ -13,6 +14,8 @@ namespace Bl
         public BlVolunteerDomainInterface VolunteerDomains { get; }
         public BlEichudInterface Eichud { get; }
         public BlSubProjectInterface SubProject  { get; }
+        public BlProjectInterface Project  { get; }
+        public BlPositionInterface Position { get; }
 
 
         public BlManager()
@@ -23,6 +26,9 @@ namespace Bl
             services.AddSingleton<BlEichudInterface, BlEichudService>();
             services.AddSingleton<BlVolunteeringInterface, BlVolunteeringService>();
             services.AddSingleton<BlVolunteerDomainInterface, BlVolunteerDomainService>();
+            services.AddSingleton<BlSubProjectInterface, BlSubProjectService>();
+            services.AddSingleton<BlProjectInterface, BlProjectService>();
+            services.AddSingleton<BlPositionInterface , BlPositionService>();
 
 
 
@@ -33,6 +39,8 @@ namespace Bl
             Eichud = service.GetRequiredService<BlEichudInterface>();
             VolunteerDomains = service.GetRequiredService<BlVolunteerDomainInterface>();
             SubProject = service.GetRequiredService<BlSubProjectInterface>();
+            Project = service.GetRequiredService<BlProjectInterface>();
+            Position = service.GetRequiredService<BlPositionInterface>();
         }
     }
 }

@@ -16,11 +16,12 @@ namespace Dal
     public class DalManager:IDal
     {
         public DalVolunteeringInterface Volunteerings { get; }
-        public DalSubProjectInterfase Volunteer { get; }
+        public DalVolunteerInterface Volunteer { get; }
         public DalEichudInterface Eichud { get; }
         public DalVolunteerDomainInterface VolunteerDomains { get; }
         public DalSubProjectInterface SubProject { get; }
         public DalPositionInterface Position { get; }
+        public DalProjectInterface Project   { get; }
 
         public DalManager()
         {
@@ -40,19 +41,21 @@ namespace Dal
 
             services.AddSingleton<DbManager>();
             services.AddSingleton<DalVolunteeringInterface, DalVolunteeringService>();
-            services.AddSingleton<DalSubProjectInterfase, DalVolunteerService>();
+            services.AddSingleton<DalVolunteerInterface, DalVolunteerService>();
             services.AddSingleton<DalEichudInterface, DalEichudService>();
             services.AddSingleton<DalVolunteerDomainInterface, DalVolunteerDomainService>();
             services.AddSingleton<DalSubProjectInterface, DalSubProjectService>();
             services.AddSingleton<DalPositionInterface, DalPositionService>();
+            services.AddSingleton<DalProjectInterface, DalProjectService>();
             ServiceProvider servicesProvider = services.BuildServiceProvider();
 
             Volunteerings = servicesProvider.GetRequiredService<DalVolunteeringInterface>();
-            Volunteer = servicesProvider.GetRequiredService<DalSubProjectInterfase>();
+            Volunteer = servicesProvider.GetRequiredService<DalVolunteerInterface>();
             Eichud = servicesProvider.GetRequiredService<DalEichudInterface>();
             VolunteerDomains = servicesProvider.GetRequiredService<DalVolunteerDomainInterface>();
             SubProject = servicesProvider.GetRequiredService<DalSubProjectInterface>();
             Position = servicesProvider.GetRequiredService<DalPositionInterface>();
+            Project = servicesProvider.GetRequiredService<DalProjectInterface>();
         }
     }
 }
