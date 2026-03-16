@@ -11,7 +11,7 @@ public partial class BlVolunteerDomainModel
 
     public int ProjectCode { get; set; }
 
-    public virtual Project ProjectCodeNavigation { get; set; } = null!;
+    //public virtual Project ProjectCodeNavigation { get; set; } = null!;
 
-    public virtual Volunteer VolunteerCodeNavigation { get; set; } = null!;
+    //public virtual Volunteer VolunteerCodeNavigation { get; set; } = null!;
 }

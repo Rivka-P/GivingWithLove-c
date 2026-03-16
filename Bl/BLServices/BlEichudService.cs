@@ -81,17 +81,15 @@ namespace Bl.BLServices
             return list;
         }
 
-        public async Task<BlEichudModel> Read(BlEichudModel item)
+        public async Task<BlEichudModel> Read(int id)
         {
-            return convert(dal.Read(convert(item)).Result);
+            return convert(dal.Read(id).Result);
         }
 
         public async Task<List<BlEichudModel>> ReadAll()
         {
             List<BlEichudModel> list = new List<BlEichudModel>();
-
-            convert(dal.ReadAll().Result);
-
+            dal.ReadAll().Result.ForEach(item => { list.Add(convert(item)); });
             return list;
         }
 

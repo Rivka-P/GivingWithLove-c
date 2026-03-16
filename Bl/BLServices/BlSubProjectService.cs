@@ -12,15 +12,16 @@ namespace Bl.BLServices
 {
     public class BlSubProjectService : BlSubProjectInterface
     {
-        private DalSubProjectInterfase SubProject;
+        private DalSubProjectInterface SubProject;
         public BlSubProjectService(IDal dal)
         {
-            this.SubProject = (DalSubProjectInterfase?)dal.SubProject;
+            this.SubProject = dal.SubProject;
         }
 
         private SubProject Convert(BlSubProjectModel s)
         {
-            return new SubProject() {
+            return new SubProject()
+            {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,
@@ -30,7 +31,8 @@ namespace Bl.BLServices
         }
         private BlSubProjectModel Convert(SubProject s)
         {
-            return new BlSubProjectModel() {
+            return new BlSubProjectModel()
+            {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,
@@ -51,7 +53,7 @@ namespace Bl.BLServices
 
         public void Delete(BlSubProjectModel item)
         {
-            throw new NotImplementedException();
+            SubProject.Delete(Convert(item));
         }
 
         public void Create(BlSubProjectModel item)
@@ -61,22 +63,31 @@ namespace Bl.BLServices
 
         public void Update(BlSubProjectModel item)
         {
-            throw new NotImplementedException();
+            SubProject.Update(Convert(item));
         }
 
         public async Task<BlSubProjectModel> Read(int id)
         {
-            throw new NotImplementedException();
+            try { return Convert(SubProject.Read(id).Result); }
+            catch (ObjectNotFoundException e)
+            {
+                return null;
+            }
         }
 
         public async Task<List<BlSubProjectModel>> ReadAll()
         {
-            throw new NotImplementedException();
+            List<BlSubProjectModel> list = new List<BlSubProjectModel>();
+
+            SubProject.ReadAll().Result.ForEach(item => { list.Add(Convert(item)); });
+
+            return list;
         }
 
         public async Task<List<BlSubProjectModel>> Read(Func<BlSubProjectModel, bool> func)
         {
-            throw new NotImplementedException();
+            List<BlSubProjectModel> list = Convert(SubProject.Read((Func<SubProject, bool>)func).Result);
+            return list;
         }
     }
 }

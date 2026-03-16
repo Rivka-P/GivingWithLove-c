@@ -37,8 +37,8 @@ namespace Bl.BLModels
 
         public string? Shver { get; set; }
 
-        public virtual Volunteer? Volunteer { get; set; }
+        //public virtual Volunteer? Volunteer { get; set; }
 
-        public virtual ICollection<Volunteering> Volunteerings { get; set; } = new List<Volunteering>();
+        //public virtual ICollection<Volunteering> Volunteerings { get; set; } = new List<Volunteering>();
     }
 }

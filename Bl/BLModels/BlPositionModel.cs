@@ -9,10 +9,10 @@ namespace Bl.BLModels
 {
     public class BlPositionModel
     {
-        public int PositionCode { get; set; }
+        public int positionCode { get; set; }
 
-        public string PositionName { get; set; } = null!;
+        public string positionName { get; set; } = null!;
 
-        public virtual ICollection<Volunteer> Volunteers { get; set; } = new List<Volunteer>();
+        //public virtual ICollection<Volunteer> Volunteers { get; set; } = new List<Volunteer>();
     }
 }

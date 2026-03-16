@@ -4,3 +4,19 @@ F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\ה
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.deps.json
+D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.dll
+D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.pdb
+D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Dal.dll
+D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Dal.pdb
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.Up2Date
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.dll
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\refint\Bl.dll
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.pdb
+D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\ref\Bl.dll

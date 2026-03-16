@@ -22,15 +22,16 @@ namespace Bl.BLServices
         {
             return new BlPositionModel()
             {
-                PositionCode = p.PositionCode,
-                PositionName = p.PositionName            };
+                positionCode = p.positionCode,
+                positionName = p.positionName
+            };
         }
         private Position convert(BlPositionModel p)
         {
             return new Position()
             {
-                PositionCode = p.PositionCode,
-                PositionName = p.PositionName
+                positionCode = p.positionCode,
+                positionName = p.positionName
             };
         }
         private List<BlPositionModel> convert(List<Position> p)
@@ -53,9 +54,9 @@ namespace Bl.BLServices
             dal.Delete(convert(item));
         }
 
-        public Task<BlPositionModel> Read(int id)
+        public async Task<BlPositionModel> Read(int id)
         {
-            throw new NotImplementedException();
+            return convert(dal.Read(id).Result);
         }
 
         public async Task<List<BlPositionModel>> Read(Func<BlPositionModel, bool> func)
@@ -68,7 +69,8 @@ namespace Bl.BLServices
         public async Task<List<BlPositionModel>> ReadAll()
         {
             List<BlPositionModel> list = new List<BlPositionModel>();
-            convert(dal.ReadAll().Result);
+            dal.ReadAll().Result.ForEach(item => { list.Add(convert(item)); });
+            //convert(dal.ReadAll().Result);
             return list;
         }
 

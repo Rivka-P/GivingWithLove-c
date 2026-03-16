@@ -11,7 +11,7 @@ namespace Dal.Services
     public class DalEichudService:DalEichudInterface
     {
         private DbManager dbm;
-
+        
         public DalEichudService(DbManager dbm)
         {
             this.dbm = dbm;
@@ -40,7 +40,10 @@ namespace Dal.Services
 
         public void Delete(Eichud item)
         {
-            throw new NotImplementedException();
+            if (item == null)
+                throw new ArgumentNullException("item");
+            dbm.Eichuds.Remove(item);
+            dbm.SaveChanges();
         }
 
         public async Task<List<Eichud>> Read(Func<Eichud, bool> func)
@@ -58,11 +61,6 @@ namespace Dal.Services
         {
             Eichud e = dbm.Eichuds.Where(x => x.EichudCode == id).FirstOrDefault();
             return e;
-        }
-
-        public object Read(Bl.BLModels.BlEichudModel item)
-        {
-            throw new NotImplementedException();
         }
 
         public async Task<List<Eichud>> ReadAll()

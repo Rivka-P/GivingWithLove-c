@@ -52,8 +52,8 @@ namespace Dal.Services
 
         public async Task<Volunteering> Read(int id)
         {
-            Volunteering v = mydb.Volunteerings.Find(v => v.VolunteerCode == id);
-            return v;
+            Volunteering p = mydb.Volunteerings.Where(x => x.VolunteeringCode == id).FirstOrDefault();
+            return p;
         }
         public async Task<List<Volunteering>> ReadAll()
         {

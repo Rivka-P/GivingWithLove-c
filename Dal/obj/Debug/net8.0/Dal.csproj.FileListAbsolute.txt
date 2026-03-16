@@ -13,3 +13,18 @@ F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\ה
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.pdb
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\ref\Dal.dll
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.sourcelink.json
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.dll
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\refint\Dal.dll
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.pdb
+D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.deps.json
+D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
+D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
+D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
+D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
