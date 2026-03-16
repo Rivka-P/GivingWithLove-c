@@ -53,7 +53,7 @@ namespace Dal.Services
 
         public async Task<Volunteering> Read(int id)
         {
-            Volunteering v =await mydb.Volunteerings.FirstOrDefaultAsync(v => v.VolunteerCode == id);
+            Volunteering v = mydb.Volunteerings.ToList().Find(v => v.VolunteerCode == id)?? throw new ObjectNotFoundException();
             return v;
         }
         public async Task<List<Volunteering>> ReadAll()

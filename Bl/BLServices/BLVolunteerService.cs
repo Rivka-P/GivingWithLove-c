@@ -12,7 +12,7 @@ namespace Bl.BLServices
 {
     public class BLVolunteerService : BlVolunteerInterface
     {
-        DalSubProjectInterfase Volunteer;
+        DalVolunteerInterface Volunteer;
         public BLVolunteerService(IDal dal)
         {
             this.Volunteer = dal.Volunteer;
@@ -49,7 +49,11 @@ namespace Bl.BLServices
         {
             //return Convert(Volunteer.Read(Convert(item)).Result);
             //return Volunteer.Read.Result(Convert(item));
-            throw new NotImplementedException();
+            try { return Convert(Volunteer.Read(id).Result ); }
+            catch (ObjectNotFoundException e) 
+            {
+                return null;
+            }
         }
 
         public async Task<List<BLVolunteerModel>> Read(Func<BLVolunteerModel, bool> func)

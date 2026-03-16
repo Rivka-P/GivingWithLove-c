@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dal.Services
 {
-    public class DalVolunteerService : DalSubProjectInterfase
+    public class DalVolunteerService : DalVolunteerInterface
     {
 
         private DbManager db;
@@ -53,7 +53,7 @@ namespace Dal.Services
         }
         public async Task<Volunteer> Read(int id)
         {
-            Volunteer v =await db.Volunteers.FirstOrDefaultAsync(v => v.VolunteerCode == id);
+            Volunteer v = db.Volunteers.ToList().Find(v => v.VolunteerCode == id)??throw new ObjectNotFoundException();
             return v;
         }
 

@@ -15,37 +15,6 @@ namespace Dal.Services
         {
             this.mydb = mydb;
         }
-
-
-
-        //public async Task<Volunteering> Read(int id)
-        //{
-        //    Volunteering v = mydb.Volunteerings.Find(v => v.VolunteerCode == id);
-        //    return v;
-        //}
-        //public async Task<List<Volunteering>> ReadAll()
-        //{
-        //    return mydb.Volunteerings.ToList();
-        //}
-
-
-
-        //public void Update(Volunteering volunteering)
-        //{
-        //    try
-        //    {
-        //        var i = ReadAll().Result.FindIndex(v => v.VolunteeringCode == volunteering.VolunteeringCode);
-        //        if (i >= 0)
-        //        {
-        //            mydb.Volunteerings.ToList<Volunteering>()[i] = volunteering;
-        //            mydb.SaveChanges();
-        //        }
-
-        //    }
-        //    catch { Console.WriteLine("Category not found"); }
-
-        //}
-
         public void Create(Position item)
         {
             if (item == null)
@@ -72,7 +41,7 @@ namespace Dal.Services
 
         public async Task<Position> Read(int id)
         {
-            Position p = mydb.Positions.Where(x=> x.PositionCode == id).FirstOrDefault();
+            Position p = mydb.Positions.ToList().Find(x=> x.positionCode == id)??throw new ObjectNotFoundException();
             return p;
         }
 
@@ -94,7 +63,7 @@ namespace Dal.Services
         {
             try
             {
-                var i = ReadAll().Result.FindIndex(v => v.PositionCode == item.PositionCode);
+                var i = ReadAll().Result.FindIndex(v => v.positionCode == item.positionCode);
                 if (i >= 0)
                 {
                     mydb.Positions.ToList<Position>()[i] = item;

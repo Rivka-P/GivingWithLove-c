@@ -5,6 +5,671 @@
     "version": "1.0"
   },
   "paths": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "/api/Eichud": {
+      "get": {
+        "tags": [
+          "Eichud"
+=======
+    "/api/Project": {
+      "get": {
+        "tags": [
+          "Project"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+<<<<<<< HEAD
+                    "$ref": "#/components/schemas/BlEichudModel"
+=======
+                    "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+<<<<<<< HEAD
+                    "$ref": "#/components/schemas/BlEichudModel"
+=======
+                    "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+<<<<<<< HEAD
+                    "$ref": "#/components/schemas/BlEichudModel"
+=======
+                    "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+<<<<<<< HEAD
+          "Eichud"
+=======
+          "Project"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "text/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "application/*+json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+<<<<<<< HEAD
+            "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
+          }
+        }
+      }
+    },
+<<<<<<< HEAD
+    "/api/Eichud/{id}": {
+      "get": {
+        "tags": [
+          "Eichud"
+=======
+    "/api/Project/{id}": {
+      "get": {
+        "tags": [
+          "Project"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+<<<<<<< HEAD
+                  "$ref": "#/components/schemas/BlEichudModel"
+=======
+                  "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+                }
+              },
+              "application/json": {
+                "schema": {
+<<<<<<< HEAD
+                  "$ref": "#/components/schemas/BlEichudModel"
+=======
+                  "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+                }
+              },
+              "text/json": {
+                "schema": {
+<<<<<<< HEAD
+                  "$ref": "#/components/schemas/BlEichudModel"
+=======
+                  "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+<<<<<<< HEAD
+          "Eichud"
+=======
+          "Project"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "text/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "application/*+json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+<<<<<<< HEAD
+            "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+<<<<<<< HEAD
+          "Eichud"
+=======
+          "Project"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "text/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "application/*+json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+<<<<<<< HEAD
+    "/api/Position": {
+      "get": {
+        "tags": [
+          "Position"
+=======
+    "/api/SubProject": {
+      "get": {
+        "tags": [
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+<<<<<<< HEAD
+                    "$ref": "#/components/schemas/BlPositionModel"
+=======
+                    "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+<<<<<<< HEAD
+                    "$ref": "#/components/schemas/BlPositionModel"
+=======
+                    "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+<<<<<<< HEAD
+                    "$ref": "#/components/schemas/BlPositionModel"
+=======
+                    "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+<<<<<<< HEAD
+          "Position"
+=======
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "text/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "application/*+json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+<<<<<<< HEAD
+            "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
+          }
+        }
+      }
+    },
+<<<<<<< HEAD
+    "/api/Position/{id}": {
+      "get": {
+        "tags": [
+          "Position"
+=======
+    "/api/SubProject/{id}": {
+      "get": {
+        "tags": [
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+<<<<<<< HEAD
+                  "$ref": "#/components/schemas/BlPositionModel"
+=======
+                  "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+                }
+              },
+              "application/json": {
+                "schema": {
+<<<<<<< HEAD
+                  "$ref": "#/components/schemas/BlPositionModel"
+=======
+                  "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+                }
+              },
+              "text/json": {
+                "schema": {
+<<<<<<< HEAD
+                  "$ref": "#/components/schemas/BlPositionModel"
+=======
+                  "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+<<<<<<< HEAD
+          "Position"
+=======
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "text/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "application/*+json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+<<<<<<< HEAD
+            "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+<<<<<<< HEAD
+          "Position"
+=======
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "text/json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            },
+            "application/*+json": {
+              "schema": {
+<<<<<<< HEAD
+                "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+>>>>>>> refs/remotes/origin/main
     "/api/Volunteer": {
       "get": {
         "tags": [
@@ -111,26 +776,56 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/BLVolunteerModel"
                   }
+<<<<<<< HEAD
+=======
+=======
+                  "$ref": "#/components/schemas/BLVolunteerModel"
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/BLVolunteerModel"
                   }
+<<<<<<< HEAD
+=======
+=======
+                  "$ref": "#/components/schemas/BLVolunteerModel"
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/BLVolunteerModel"
                   }
+<<<<<<< HEAD
+=======
+=======
+                  "$ref": "#/components/schemas/BLVolunteerModel"
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -425,7 +1120,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Volunteering": {
+=======
+    "/api/Volunteering/Get": {
+>>>>>>> refs/remotes/origin/main
       "get": {
         "tags": [
           "Volunteering"
@@ -461,6 +1160,7 @@
             }
           }
         }
+<<<<<<< HEAD
       },
       "post": {
         "tags": [
@@ -493,6 +1193,11 @@
       }
     },
     "/api/Volunteering/{id}": {
+=======
+      }
+    },
+    "/api/Volunteering/Get/{id}": {
+>>>>>>> refs/remotes/origin/main
       "get": {
         "tags": [
           "Volunteering"
@@ -530,7 +1235,44 @@
             }
           }
         }
+<<<<<<< HEAD
       },
+=======
+      }
+    },
+    "/api/Volunteering/Post": {
+      "post": {
+        "tags": [
+          "Volunteering"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlVolunteeringModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlVolunteeringModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlVolunteeringModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Volunteering/Put/{id}": {
+>>>>>>> refs/remotes/origin/main
       "put": {
         "tags": [
           "Volunteering"
@@ -570,7 +1312,13 @@
             "description": "OK"
           }
         }
+<<<<<<< HEAD
       },
+=======
+      }
+    },
+    "/api/Volunteering/Delete/{id}": {
+>>>>>>> refs/remotes/origin/main
       "delete": {
         "tags": [
           "Volunteering"
@@ -650,6 +1398,134 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      "BlEichudModel": {
+        "type": "object",
+        "properties": {
+          "eichudCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tohar": {
+            "type": "string",
+            "nullable": true
+          },
+          "familyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ending": {
+            "type": "string",
+            "nullable": true
+          },
+          "fathersName": {
+            "type": "string",
+            "nullable": true
+          },
+          "shtibel": {
+            "type": "string",
+            "nullable": true
+          },
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "house": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipCode": {
+=======
+      "BlProjectModel": {
+        "type": "object",
+        "properties": {
+          "projectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectName": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectManagerCode": {
+>>>>>>> refs/remotes/origin/main
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+<<<<<<< HEAD
+          "housePhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "cellPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "shver": {
+            "type": "string",
+            "nullable": true
+=======
+          "domainCode": {
+            "type": "integer",
+            "format": "int32"
+>>>>>>> refs/remotes/origin/main
+          }
+        },
+        "additionalProperties": false
+      },
+<<<<<<< HEAD
+      "BlPositionModel": {
+        "type": "object",
+        "properties": {
+          "positionCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "positionName": {
+            "type": "string",
+            "nullable": true
+=======
+      "BlSubProjectModel": {
+        "type": "object",
+        "properties": {
+          "subProjectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subProjectName": {
+            "type": "string",
+            "nullable": true
+          },
+          "estimatedTime": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "estimatedCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+>>>>>>> refs/remotes/origin/main
+          }
+        },
+        "additionalProperties": false
+      },
+>>>>>>> refs/remotes/origin/main
       "BlVolunteerDomainModel": {
         "type": "object",
         "properties": {
@@ -696,6 +1572,7 @@
           },
           "projectCode": {
             "type": "integer",
+<<<<<<< HEAD
             "format": "int32",
             "nullable": true
           },
@@ -703,6 +1580,13 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+=======
+            "format": "int32"
+          },
+          "subProjectCode": {
+            "type": "integer",
+            "format": "int32"
+>>>>>>> refs/remotes/origin/main
           }
         },
         "additionalProperties": false
