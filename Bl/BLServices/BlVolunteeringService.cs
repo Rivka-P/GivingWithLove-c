@@ -19,6 +19,7 @@ namespace Bl.BLServices
         private BLModels.BlVolunteeringModel Convert(Volunteering v)
         {
             return new BLModels.BlVolunteeringModel() {
+                VolunteeringCode=v.VolunteeringCode,
                 DateOfVolunteering = v.DateOfVolunteering,
                 MatcherCode = v.MatcherCode,
                 VolunteerCode = v.VolunteerCode,

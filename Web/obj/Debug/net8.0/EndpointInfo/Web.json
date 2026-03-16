@@ -425,7 +425,7 @@
         }
       }
     },
-    "/api/Volunteering/Get": {
+    "/api/Volunteering": {
       "get": {
         "tags": [
           "Volunteering"
@@ -461,9 +461,38 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Volunteering"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlVolunteeringModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlVolunteeringModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlVolunteeringModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
-    "/api/Volunteering/Get/{id}": {
+    "/api/Volunteering/{id}": {
       "get": {
         "tags": [
           "Volunteering"
@@ -501,40 +530,7 @@
             }
           }
         }
-      }
-    },
-    "/api/Volunteering/Post": {
-      "post": {
-        "tags": [
-          "Volunteering"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlVolunteeringModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlVolunteeringModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlVolunteeringModel"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Volunteering/Put/{id}": {
+      },
       "put": {
         "tags": [
           "Volunteering"
@@ -574,9 +570,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Volunteering/Delete/{id}": {
+      },
       "delete": {
         "tags": [
           "Volunteering"
@@ -702,11 +696,13 @@
           },
           "projectCode": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "subProjectCode": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -13,15 +13,15 @@ namespace Bl.BLModels
 
         public DateOnly DateOfVolunteering { get; set; }
 
-        public int? VolunteerCode { get; set; }
+        public int ? VolunteerCode { get; set; }
 
-        public int? PoorManCode { get; set; }
+        public int ? PoorManCode { get; set; }
 
         public int? MatcherCode { get; set; }
 
-        public int ProjectCode { get; set; }
+        public int ? ProjectCode { get; set; }
 
-        public int SubProjectCode { get; set; }
+        public int ? SubProjectCode { get; set; }
 
         //public virtual Volunteer? MatcherCodeNavigation { get; set; }
 

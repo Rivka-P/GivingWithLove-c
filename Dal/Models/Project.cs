@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Dal.Models;
 
 public partial class Project
 {
-    public int ProjectCode { get; set; }
-
-    public string ProjectName { get; set; } = null!;
-
-    public int? ProjectManagerCode { get; set; }
-
-    public int DomainCode { get; set; }
+     public int ProjectCode { get; set; }
+    public string ProjectName { get; set; }
+    public  int ? ProjectManagerCode { get; set; }
+    public int? DomainCode { get; set; }
 
     public virtual Project DomainCodeNavigation { get; set; } = null!;
 

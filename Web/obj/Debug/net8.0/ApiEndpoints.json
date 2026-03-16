@@ -252,30 +252,8 @@
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
-    "Method": "Delete",
-    "RelativePath": "api/Volunteering/Delete/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Web.Controllers.VolunteeringController",
     "Method": "Get",
-    "RelativePath": "api/Volunteering/Get",
+    "RelativePath": "api/Volunteering",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -294,34 +272,8 @@
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
-    "Method": "Get",
-    "RelativePath": "api/Volunteering/Get/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Bl.BLModels.BlVolunteeringModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Web.Controllers.VolunteeringController",
     "Method": "Post",
-    "RelativePath": "api/Volunteering/Post",
+    "RelativePath": "api/Volunteering",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -342,8 +294,34 @@
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
+    "Method": "Get",
+    "RelativePath": "api/Volunteering/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Bl.BLModels.BlVolunteeringModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.VolunteeringController",
     "Method": "Put",
-    "RelativePath": "api/Volunteering/Put/{id}",
+    "RelativePath": "api/Volunteering/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -356,6 +334,28 @@
       {
         "Name": "v",
         "Type": "Bl.BLModels.BlVolunteeringModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.VolunteeringController",
+    "Method": "Delete",
+    "RelativePath": "api/Volunteering/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
