@@ -82,11 +82,6 @@ namespace Bl.BLServices
             return list;
         }
 
-<<<<<<< HEAD
-        public async Task<BlEichudModel> Read(BlEichudModel item)
-        {
-            return convert(dal.Read(convert(item).EichudCode).Result);
-=======
         public async Task<BlEichudModel> Read(int id)
         {
             try { return convert(dal.Read(id).Result); }
@@ -95,7 +90,6 @@ namespace Bl.BLServices
                 return null;
             }
             //return convert(dal.Read(convert(item).Result));
->>>>>>> refs/remotes/origin/main
         }
 
         public async Task<List<BlEichudModel>> ReadAll()
@@ -110,9 +104,6 @@ namespace Bl.BLServices
             dal.Update(convert(item));
         }
 
-        public Task<BlEichudModel> Read(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

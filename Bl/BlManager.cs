@@ -27,15 +27,10 @@ namespace Bl
             services.AddSingleton<BlVolunteerInterface, BLVolunteerService>();
             services.AddSingleton<BlEichudInterface, BlEichudService>();
             services.AddSingleton<BlVolunteeringInterface, BlVolunteeringService>();
-<<<<<<< HEAD
-            services.AddSingleton<BlVolunteerDomainInterface, BlVolunteerDomainService>();
-            services.AddSingleton<BlSubProjectInterface, BlSubProjectService>();
-=======
             services.AddSingleton<BlVolunteerDomainInterface, BlVolunteerDomainService>();
             services.AddSingleton<BlSubProjectInterface, BlSubProjectService>();
             services.AddSingleton<BlProjectInterface, BlProjectService>();
             services.AddSingleton<BlPositionInterface , BlPositionService>();
->>>>>>> refs/remotes/origin/main
 
 
 

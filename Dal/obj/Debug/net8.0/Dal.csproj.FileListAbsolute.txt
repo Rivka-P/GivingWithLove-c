@@ -30,7 +30,6 @@ D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
 =======
-<<<<<<< HEAD
 D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
 D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
 D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
@@ -46,7 +45,6 @@ D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
 D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
 D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
 D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
-=======
 D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
 D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
 D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
@@ -62,5 +60,4 @@ D:\אדלר יפי\C#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
 D:\אדלר יפי\C#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
 D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
 D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
->>>>>>> refs/remotes/origin/main
 >>>>>>> refs/remotes/origin/main

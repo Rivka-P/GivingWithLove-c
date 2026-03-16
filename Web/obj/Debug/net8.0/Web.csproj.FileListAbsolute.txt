@@ -167,7 +167,6 @@ D:\RivkyPinter\GWL_Project\GivingWithLove-c\Web\obj\Debug\net8.0\Web.csproj.Up2D
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Web\obj\Debug\net8.0\ref\Web.dll
 =======
-<<<<<<< HEAD
 D:\givingWithLove\GivingWithLove-c\Web\bin\Debug\net8.0\appsettings.Development.json
 D:\givingWithLove\GivingWithLove-c\Web\bin\Debug\net8.0\appsettings.json
 D:\givingWithLove\GivingWithLove-c\Web\bin\Debug\net8.0\Web.staticwebassets.endpoints.json
@@ -246,7 +245,6 @@ D:\givingWithLove\GivingWithLove-c\Web\obj\Debug\net8.0\refint\Web.dll
 D:\givingWithLove\GivingWithLove-c\Web\obj\Debug\net8.0\Web.pdb
 D:\givingWithLove\GivingWithLove-c\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 D:\givingWithLove\GivingWithLove-c\Web\obj\Debug\net8.0\ref\Web.dll
-=======
 D:\אדלר יפי\C#\GivingWithLove-c\Web\bin\Debug\net8.0\appsettings.Development.json
 D:\אדלר יפי\C#\GivingWithLove-c\Web\bin\Debug\net8.0\appsettings.json
 D:\אדלר יפי\C#\GivingWithLove-c\Web\bin\Debug\net8.0\Web.staticwebassets.endpoints.json
@@ -325,5 +323,4 @@ D:\אדלר יפי\C#\GivingWithLove-c\Web\obj\Debug\net8.0\refint\Web.dll
 D:\אדלר יפי\C#\GivingWithLove-c\Web\obj\Debug\net8.0\Web.pdb
 D:\אדלר יפי\C#\GivingWithLove-c\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 D:\אדלר יפי\C#\GivingWithLove-c\Web\obj\Debug\net8.0\ref\Web.dll
->>>>>>> refs/remotes/origin/main
 >>>>>>> refs/remotes/origin/main
