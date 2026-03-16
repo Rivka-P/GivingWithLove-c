@@ -16,5 +16,8 @@ namespace Bl.BLApi
         public BlSubProjectInterface SubProject { get; }
         public BlPositionInterface Position { get; }
 
+        public BlProjectInterface Project { get; }
+
+
     }
 }

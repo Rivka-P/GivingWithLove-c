@@ -3,6 +3,41 @@
   "WorkspaceRootPath": "D:\\givingWithLove\\GivingWithLove-c\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blservices\\blsubprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blsubprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blservices\\bleichudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\bleichudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blapi\\ibl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\ibl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\services\\dalvolunteerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalvolunteerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\services\\dalvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\services\\dalvolunteerdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalvolunteerdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\api\\daleichudinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\daleichudinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__GIVINGWITHLOVE_GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Positions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
@@ -24,10 +59,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blservices\\bleichudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\bleichudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blmodels\\bleichudmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,10 +87,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\api\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blapi\\ibl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\ibl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blmodels\\blpositionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -92,10 +119,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blservices\\blvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blservices\\blsubprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blsubprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\models\\volunteering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,24 +157,8 @@
       "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmodels\\blsubprojectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\services\\dalvolunteerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalvolunteerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\services\\dalvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\api\\dalvolunteeringinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalvolunteeringinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\services\\dalvolunteerdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalvolunteerdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\givingwithlove\\givingwithlove-c\\bl\\blapi\\blvolunteerinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,16 +181,8 @@
       "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\blpositioninterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\api\\daleichudinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\daleichudinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\api\\dalvolunteerdomaininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalvolunteerdomaininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\api\\dalvolunteerinterfase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalvolunteerinterfase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{156728C7-4307-4E75-9FE9-E19DF65639B3}|Web\\Web.csproj|d:\\givingwithlove\\givingwithlove-c\\web\\controllers\\volunteerdomaincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -212,6 +211,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\givingwithlove\\givingwithlove-c\\dal\\api\\dalsubprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalsubprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalVolunteerInterfase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dal\\Api\\DalVolunteerInterfase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -221,96 +224,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 260,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "DalVolunteerInterfase.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalVolunteerInterfase.cs",
-              "RelativeDocumentMoniker": "Dal\\Api\\DalVolunteerInterfase.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalVolunteerInterfase.cs",
-              "RelativeToolTip": "Dal\\Api\\DalVolunteerInterfase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAABECAAAAAAAAAAAAALcCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-03-16T12:13:26.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DalEichudInterface.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalEichudInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalEichudInterface.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalEichudInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalEichudInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T14:44:11.042Z",
-              "IsPinned": true
+              "WhenOpened": "2026-02-23T13:00:01.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "BlEichudModel.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BlEichudModel.cs",
-              "RelativeDocumentMoniker": "Bl\\BLModels\\BlEichudModel.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BlEichudModel.cs",
-              "RelativeToolTip": "Bl\\BLModels\\BlEichudModel.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAkwCkAAAAkAAAAAAAAAA==",
+              "Title": "DalVolunteerDomainService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerDomainService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalVolunteerDomainService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerDomainService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalVolunteerDomainService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:55:36.06Z"
+              "WhenOpened": "2026-02-19T17:04:35.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DalEichudService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalEichudService.cs",
-              "RelativeDocumentMoniker": "Dal\\Services\\DalEichudService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalEichudService.cs",
-              "RelativeToolTip": "Dal\\Services\\DalEichudService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "DalVolunteeringService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteeringService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalVolunteeringService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteeringService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalVolunteeringService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAIAwwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:04:29.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ICrud.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\ICrud.cs",
-              "RelativeDocumentMoniker": "Dal\\Api\\ICrud.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\ICrud.cs",
-              "RelativeToolTip": "Dal\\Api\\ICrud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:34:16.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BlPositionService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlPositionService.cs",
-              "RelativeDocumentMoniker": "Bl\\BLServices\\BlPositionService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlPositionService.cs",
-              "RelativeToolTip": "Bl\\BLServices\\BlPositionService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAnwDUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:52:51.397Z"
+              "WhenOpened": "2026-02-23T13:07:32.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Position.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Position.cs",
-              "RelativeDocumentMoniker": "Dal\\Models\\Position.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Position.cs",
-              "RelativeToolTip": "Dal\\Models\\Position.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Title": "DalVolunteerService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalVolunteerService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalVolunteerService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAewDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T16:01:25.121Z"
+              "WhenOpened": "2026-02-19T17:04:41.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBl.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\IBl.cs",
+              "RelativeDocumentMoniker": "Bl\\BLApi\\IBl.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\IBl.cs",
+              "RelativeToolTip": "Bl\\BLApi\\IBl.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIA9wBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T17:45:55.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlManager.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BlManager.cs",
+              "RelativeDocumentMoniker": "Bl\\BlManager.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BlManager.cs",
+              "RelativeToolTip": "Bl\\BlManager.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAIwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T17:53:40.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DalPositionService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalPositionService.cs",
-              "RelativeDocumentMoniker": "Dal\\Services\\DalPositionService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalPositionService.cs",
-              "RelativeToolTip": "Dal\\Services\\DalPositionService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAvwCYAAAAfAAAAAAAAAA==",
+              "Title": "BlEichudService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlEichudService.cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlEichudService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlEichudService.cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlEichudService.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAnwFIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:54:26.703Z"
+              "WhenOpened": "2026-02-23T13:01:53.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BlSubProjectService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlSubProjectService.cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlSubProjectService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlSubProjectService.cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlSubProjectService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T17:38:16.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Positions.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__GIVINGWITHLOVE_GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Positions.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__GIVINGWITHLOVE_GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Positions.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-15T11:12:58.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "DbManager.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\DbManager.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\DbManager.cs",
@@ -322,16 +364,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.Positions.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__GIVINGWITHLOVE_GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Positions.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__GIVINGWITHLOVE_GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Positions.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-03-15T11:12:58.783Z"
+              "DocumentIndex": 11,
+              "Title": "DalPositionService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalPositionService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalPositionService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalPositionService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalPositionService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAvwCYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T12:54:26.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
+              "Title": "Position.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Position.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\Position.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Position.cs",
+              "RelativeToolTip": "Dal\\Models\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T16:01:25.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BlPositionService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlPositionService.cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlPositionService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlPositionService.cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlPositionService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAnwDUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T12:52:51.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICrud.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\ICrud.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\ICrud.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\ICrud.cs",
+              "RelativeToolTip": "Dal\\Api\\ICrud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T17:34:16.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DalEichudService.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalEichudService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalEichudService.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalEichudService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalEichudService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T17:04:29.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BlEichudModel.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BlEichudModel.cs",
+              "RelativeDocumentMoniker": "Bl\\BLModels\\BlEichudModel.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BlEichudModel.cs",
+              "RelativeToolTip": "Bl\\BLModels\\BlEichudModel.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAkwCkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T13:55:36.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DalVolunteerInterfase.cs",
+              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalVolunteerInterfase.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalVolunteerInterfase.cs",
+              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalVolunteerInterfase.cs",
+              "RelativeToolTip": "Dal\\Api\\DalVolunteerInterfase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T12:04:00.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PositionController.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Web\\Controllers\\PositionController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\PositionController.cs",
@@ -343,19 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BlEichudService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlEichudService.cs",
-              "RelativeDocumentMoniker": "Bl\\BLServices\\BlEichudService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlEichudService.cs",
-              "RelativeToolTip": "Bl\\BLServices\\BlEichudService.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:01:53.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "BlICrud.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\BlICrud.cs",
               "RelativeDocumentMoniker": "Bl\\BLApi\\BlICrud.cs",
@@ -367,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "BlEichudInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\BlEichudInterface.cs",
               "RelativeDocumentMoniker": "Bl\\BLApi\\BlEichudInterface.cs",
@@ -379,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "VolunteerController.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Web\\Controllers\\VolunteerController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\VolunteerController.cs",
@@ -391,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "EichudController.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Web\\Controllers\\EichudController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\EichudController.cs",
@@ -403,19 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IBl.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\IBl.cs",
-              "RelativeDocumentMoniker": "Bl\\BLApi\\IBl.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\IBl.cs",
-              "RelativeToolTip": "Bl\\BLApi\\IBl.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwA8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:45:55.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "BlPositionModel.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BlPositionModel.cs",
               "RelativeDocumentMoniker": "Bl\\BLModels\\BlPositionModel.cs",
@@ -427,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "BLVolunteerService.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BLVolunteerService.cs",
               "RelativeDocumentMoniker": "Bl\\BLServices\\BLVolunteerService.cs",
@@ -439,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "BlVolunteerDomainService .cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlVolunteerDomainService .cs",
               "RelativeDocumentMoniker": "Bl\\BLServices\\BlVolunteerDomainService .cs",
@@ -451,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "DalSubProjectService.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalSubProjectService.cs",
               "RelativeDocumentMoniker": "Dal\\Services\\DalSubProjectService.cs",
@@ -463,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Web\\Program.cs",
               "RelativeDocumentMoniker": "Web\\Program.cs",
@@ -475,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "BlVolunteeringService.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlVolunteeringService.cs",
               "RelativeDocumentMoniker": "Bl\\BLServices\\BlVolunteeringService.cs",
@@ -487,19 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "BlSubProjectService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlSubProjectService.cs",
-              "RelativeDocumentMoniker": "Bl\\BLServices\\BlSubProjectService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\BlSubProjectService.cs",
-              "RelativeToolTip": "Bl\\BLServices\\BlSubProjectService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFEAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:38:16.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "Eichud.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Eichud.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\Eichud.cs",
@@ -511,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "ObjectNotFoundException.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLServices\\ObjectNotFoundException.cs",
               "RelativeDocumentMoniker": "Bl\\BLServices\\ObjectNotFoundException.cs",
@@ -523,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Volunteer.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Volunteer.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\Volunteer.cs",
@@ -535,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "VolunteerDomain.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\VolunteerDomain.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\VolunteerDomain.cs",
@@ -547,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "Volunteering.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Volunteering.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\Volunteering.cs",
@@ -559,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "SubProject.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\SubProject.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\SubProject.cs",
@@ -571,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "Project.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Models\\Project.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\Project.cs",
@@ -583,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "BLVolunteerModel.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BLVolunteerModel.cs",
               "RelativeDocumentMoniker": "Bl\\BLModels\\BLVolunteerModel.cs",
@@ -595,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "BLVolunteeringModel.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BLVolunteeringModel.cs",
               "RelativeDocumentMoniker": "Bl\\BLModels\\BLVolunteeringModel.cs",
@@ -607,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "BlVolunteerDomainModel.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BlVolunteerDomainModel.cs",
               "RelativeDocumentMoniker": "Bl\\BLModels\\BlVolunteerDomainModel.cs",
@@ -619,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "BlSubProjectModel.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLModels\\BlSubProjectModel.cs",
               "RelativeDocumentMoniker": "Bl\\BLModels\\BlSubProjectModel.cs",
@@ -631,55 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "DalVolunteerService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerService.cs",
-              "RelativeDocumentMoniker": "Dal\\Services\\DalVolunteerService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerService.cs",
-              "RelativeToolTip": "Dal\\Services\\DalVolunteerService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:04:41.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "BlManager.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BlManager.cs",
-              "RelativeDocumentMoniker": "Bl\\BlManager.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BlManager.cs",
-              "RelativeToolTip": "Bl\\BlManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:53:40.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "DalVolunteeringService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteeringService.cs",
-              "RelativeDocumentMoniker": "Dal\\Services\\DalVolunteeringService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteeringService.cs",
-              "RelativeToolTip": "Dal\\Services\\DalVolunteeringService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAmwDYAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:07:32.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "DalVolunteerDomainService.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerDomainService.cs",
-              "RelativeDocumentMoniker": "Dal\\Services\\DalVolunteerDomainService.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Services\\DalVolunteerDomainService.cs",
-              "RelativeToolTip": "Dal\\Services\\DalVolunteerDomainService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAswDgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:04:35.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "DalVolunteeringInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalVolunteeringInterface.cs",
               "RelativeDocumentMoniker": "Dal\\Api\\DalVolunteeringInterface.cs",
@@ -691,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "BlVolunteerInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\BlVolunteerInterface.cs",
               "RelativeDocumentMoniker": "Bl\\BLApi\\BlVolunteerInterface.cs",
@@ -703,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "BlVolunteeringInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\BlVolunteeringInterface.cs",
               "RelativeDocumentMoniker": "Bl\\BLApi\\BlVolunteeringInterface.cs",
@@ -715,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "BlVolunteerDomainInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\BlVolunteerDomainInterface.cs",
               "RelativeDocumentMoniker": "Bl\\BLApi\\BlVolunteerDomainInterface.cs",
@@ -727,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "BlSubProjectInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\BlSubProjectInterface.cs",
               "RelativeDocumentMoniker": "Bl\\BLApi\\BlSubProjectInterface.cs",
@@ -739,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "BlPositionInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Bl\\BLApi\\BlPositionInterface.cs",
               "RelativeDocumentMoniker": "Bl\\BLApi\\BlPositionInterface.cs",
@@ -751,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "DalVolunteerDomainInterface.cs",
               "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalVolunteerDomainInterface.cs",
               "RelativeDocumentMoniker": "Dal\\Api\\DalVolunteerDomainInterface.cs",
@@ -760,18 +793,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T13:38:03.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "DalEichudInterface.cs",
-              "DocumentMoniker": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalEichudInterface.cs",
-              "RelativeDocumentMoniker": "Dal\\Api\\DalEichudInterface.cs",
-              "ToolTip": "D:\\givingWithLove\\GivingWithLove-c\\Dal\\Api\\DalEichudInterface.cs",
-              "RelativeToolTip": "Dal\\Api\\DalEichudInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:00:01.723Z"
             },
             {
               "$type": "Document",

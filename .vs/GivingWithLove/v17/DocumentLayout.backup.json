@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\givingWithLove\\GivingWithLove-c\\",
   "Documents": [
     {
@@ -214,12 +215,17 @@
       "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalsubprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "D:\\\u05D0\u05D3\u05DC\u05E8 \u05D9\u05E4\u05D9\\C#\\GivingWithLove-c\\",
+  "Documents": [],
+>>>>>>> refs/remotes/origin/main
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 260,
           "SelectedChildIndex": 8,
           "Children": [
@@ -234,8 +240,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T14:44:11.042Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -247,8 +252,7 @@
               "RelativeToolTip": "Bl\\BLModels\\BlEichudModel.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwCkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:55:36.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T13:55:36.06Z"
             },
             {
               "$type": "Document",
@@ -260,8 +264,7 @@
               "RelativeToolTip": "Dal\\Services\\DalEichudService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:04:29.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:04:29.735Z"
             },
             {
               "$type": "Document",
@@ -273,8 +276,7 @@
               "RelativeToolTip": "Dal\\Api\\ICrud.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:34:16.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:34:16.481Z"
             },
             {
               "$type": "Document",
@@ -286,8 +288,7 @@
               "RelativeToolTip": "Bl\\BLServices\\BlPositionService.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAnwDUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:52:51.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T12:52:51.397Z"
             },
             {
               "$type": "Document",
@@ -299,8 +300,7 @@
               "RelativeToolTip": "Dal\\Models\\Position.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T16:01:25.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T16:01:25.121Z"
             },
             {
               "$type": "Document",
@@ -312,8 +312,7 @@
               "RelativeToolTip": "Dal\\Services\\DalPositionService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAvwCYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:54:26.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T12:54:26.703Z"
             },
             {
               "$type": "Document",
@@ -325,18 +324,16 @@
               "RelativeToolTip": "Dal\\Models\\DbManager.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:46:30.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:46:30.138Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "dbo.Positions [Data]",
+              "Title": "dbo.Positions.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__GIVINGWITHLOVE_GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Positions.sql",
-              "ToolTip": "dbo.Positions [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__GIVINGWITHLOVE_GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Positions.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-03-15T11:12:58.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T11:12:58.783Z"
             },
             {
               "$type": "Document",
@@ -348,8 +345,7 @@
               "RelativeToolTip": "Web\\Controllers\\PositionController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAD4vzoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T11:48:31.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T11:48:31.473Z"
             },
             {
               "$type": "Document",
@@ -361,8 +357,7 @@
               "RelativeToolTip": "Bl\\BLServices\\BlEichudService.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:01:53.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T13:01:53.895Z"
             },
             {
               "$type": "Document",
@@ -374,8 +369,7 @@
               "RelativeToolTip": "Bl\\BLApi\\BlICrud.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAD4vxIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:02:44.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T13:02:44.814Z"
             },
             {
               "$type": "Document",
@@ -387,8 +381,7 @@
               "RelativeToolTip": "Bl\\BLApi\\BlEichudInterface.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAiwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:55:19.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T13:55:19.757Z"
             },
             {
               "$type": "Document",
@@ -400,8 +393,7 @@
               "RelativeToolTip": "Web\\Controllers\\VolunteerController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAwwEEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T11:47:52.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T11:47:52.039Z"
             },
             {
               "$type": "Document",
@@ -413,8 +405,7 @@
               "RelativeToolTip": "Web\\Controllers\\EichudController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T12:20:36.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T12:20:36.04Z"
             },
             {
               "$type": "Document",
@@ -426,8 +417,7 @@
               "RelativeToolTip": "Bl\\BLApi\\IBl.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAkwA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:45:55.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:45:55.563Z"
             },
             {
               "$type": "Document",
@@ -439,8 +429,7 @@
               "RelativeToolTip": "Bl\\BLModels\\BlPositionModel.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:52:20.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T12:52:20.373Z"
             },
             {
               "$type": "Document",
@@ -452,8 +441,7 @@
               "RelativeToolTip": "Bl\\BLServices\\BLVolunteerService.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAuwCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:42:48.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:42:48.16Z"
             },
             {
               "$type": "Document",
@@ -465,8 +453,7 @@
               "RelativeToolTip": "Bl\\BLServices\\BlVolunteerDomainService .cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T14:53:14.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T14:53:14.191Z"
             },
             {
               "$type": "Document",
@@ -478,8 +465,7 @@
               "RelativeToolTip": "Dal\\Services\\DalSubProjectService.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAcwDYAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:01:13.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:01:13.487Z"
             },
             {
               "$type": "Document",
@@ -491,8 +477,7 @@
               "RelativeToolTip": "Web\\Program.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T10:57:02.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T10:57:02.549Z"
             },
             {
               "$type": "Document",
@@ -504,8 +489,7 @@
               "RelativeToolTip": "Bl\\BLServices\\BlVolunteeringService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:38:27.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:38:27.461Z"
             },
             {
               "$type": "Document",
@@ -517,8 +501,7 @@
               "RelativeToolTip": "Bl\\BLServices\\BlSubProjectService.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAuwFEAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:38:16.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:38:16.049Z"
             },
             {
               "$type": "Document",
@@ -530,8 +513,7 @@
               "RelativeToolTip": "Dal\\Models\\Eichud.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAkwCUAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T15:51:03.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T15:51:03.397Z"
             },
             {
               "$type": "Document",
@@ -543,8 +525,7 @@
               "RelativeToolTip": "Bl\\BLServices\\ObjectNotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T14:56:34.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T14:56:34.646Z"
             },
             {
               "$type": "Document",
@@ -556,8 +537,7 @@
               "RelativeToolTip": "Dal\\Models\\Volunteer.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA5wBUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T14:38:02.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T14:38:02.061Z"
             },
             {
               "$type": "Document",
@@ -569,8 +549,7 @@
               "RelativeToolTip": "Dal\\Models\\VolunteerDomain.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T14:38:10.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T14:38:10.469Z"
             },
             {
               "$type": "Document",
@@ -582,8 +561,7 @@
               "RelativeToolTip": "Dal\\Models\\Volunteering.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAuwB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:06:02.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T14:06:02.574Z"
             },
             {
               "$type": "Document",
@@ -595,8 +573,7 @@
               "RelativeToolTip": "Dal\\Models\\SubProject.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA5wBMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:35:25.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:35:25.87Z"
             },
             {
               "$type": "Document",
@@ -608,8 +585,7 @@
               "RelativeToolTip": "Dal\\Models\\Project.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowBkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T16:02:50.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T16:02:50.026Z"
             },
             {
               "$type": "Document",
@@ -621,8 +597,7 @@
               "RelativeToolTip": "Bl\\BLModels\\BLVolunteerModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T14:35:04.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T14:35:04.11Z"
             },
             {
               "$type": "Document",
@@ -634,8 +609,7 @@
               "RelativeToolTip": "Bl\\BLModels\\BLVolunteeringModel.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAkwCEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:03:00.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T13:03:00.318Z"
             },
             {
               "$type": "Document",
@@ -647,8 +621,7 @@
               "RelativeToolTip": "Bl\\BLModels\\BlVolunteerDomainModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAmwA8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T14:34:47.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T14:34:47.336Z"
             },
             {
               "$type": "Document",
@@ -660,8 +633,7 @@
               "RelativeToolTip": "Bl\\BLModels\\BlSubProjectModel.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:35:14.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:35:14.027Z"
             },
             {
               "$type": "Document",
@@ -673,8 +645,7 @@
               "RelativeToolTip": "Dal\\Services\\DalVolunteerService.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowDQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:04:41.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:04:41.775Z"
             },
             {
               "$type": "Document",
@@ -686,8 +657,7 @@
               "RelativeToolTip": "Bl\\BlManager.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:53:40.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:53:40.428Z"
             },
             {
               "$type": "Document",
@@ -699,8 +669,7 @@
               "RelativeToolTip": "Dal\\Services\\DalVolunteeringService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAmwDYAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:07:32.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T13:07:32.686Z"
             },
             {
               "$type": "Document",
@@ -712,8 +681,7 @@
               "RelativeToolTip": "Dal\\Services\\DalVolunteerDomainService.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAswDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:04:35.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:04:35.083Z"
             },
             {
               "$type": "Document",
@@ -725,8 +693,7 @@
               "RelativeToolTip": "Dal\\Api\\DalVolunteeringInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:05:57.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T14:05:57.101Z"
             },
             {
               "$type": "Document",
@@ -738,8 +705,7 @@
               "RelativeToolTip": "Bl\\BLApi\\BlVolunteerInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:06:56.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T18:06:56.581Z"
             },
             {
               "$type": "Document",
@@ -751,8 +717,7 @@
               "RelativeToolTip": "Bl\\BLApi\\BlVolunteeringInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:06:45.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T18:06:45.936Z"
             },
             {
               "$type": "Document",
@@ -764,8 +729,7 @@
               "RelativeToolTip": "Bl\\BLApi\\BlVolunteerDomainInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:36:47.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:36:47.813Z"
             },
             {
               "$type": "Document",
@@ -777,8 +741,7 @@
               "RelativeToolTip": "Bl\\BLApi\\BlSubProjectInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:36:30.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:36:30.348Z"
             },
             {
               "$type": "Document",
@@ -790,8 +753,7 @@
               "RelativeToolTip": "Bl\\BLApi\\BlPositionInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:52:15.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T12:52:15.917Z"
             },
             {
               "$type": "Document",
@@ -803,8 +765,7 @@
               "RelativeToolTip": "Dal\\Api\\DalVolunteerDomainInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:38:03.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T13:38:03.54Z"
             },
             {
               "$type": "Document",
@@ -816,8 +777,7 @@
               "RelativeToolTip": "Dal\\Api\\DalEichudInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:00:01.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T13:00:01.723Z"
             },
             {
               "$type": "Document",
@@ -829,8 +789,7 @@
               "RelativeToolTip": "Web\\Controllers\\VolunteerDomainController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T11:47:56.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T11:47:56.884Z"
             },
             {
               "$type": "Document",
@@ -842,8 +801,7 @@
               "RelativeToolTip": "Web\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T12:13:05.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T12:13:05.15Z"
             },
             {
               "$type": "Document",
@@ -855,8 +813,7 @@
               "RelativeToolTip": "Web\\Controllers\\VolunteeringController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T11:47:58.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T11:47:58.343Z"
             },
             {
               "$type": "Document",
@@ -868,8 +825,7 @@
               "RelativeToolTip": "Dal\\Api\\DalPositionInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T11:45:56.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T11:45:56.94Z"
             },
             {
               "$type": "Document",
@@ -881,8 +837,7 @@
               "RelativeToolTip": "Dal\\Api\\IDal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:34:15.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:34:15.065Z"
             },
             {
               "$type": "Document",
@@ -894,8 +849,7 @@
               "RelativeToolTip": "Dal\\DalManager.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowBUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:47:48.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:47:48.37Z"
             },
             {
               "$type": "Document",
@@ -907,8 +861,15 @@
               "RelativeToolTip": "Dal\\Api\\DalSubProjectInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:02:50.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:02:50.12Z"
+=======
+          "DockedWidth": 36,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
+>>>>>>> refs/remotes/origin/main
             }
           ]
         }

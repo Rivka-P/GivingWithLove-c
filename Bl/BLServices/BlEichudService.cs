@@ -77,13 +77,19 @@ namespace Bl.BLServices
 
         public async Task<List<BlEichudModel>> Read(Func<BlEichudModel, bool> func)
         {
+
             List<BlEichudModel> list = convert(dal.Read((Func<Eichud, bool>)func).Result);
             return list;
         }
 
         public async Task<BlEichudModel> Read(int id)
         {
-            return convert(dal.Read(id).Result);
+            try { return convert(dal.Read(id).Result); }
+            catch (ObjectNotFoundException e)
+            {
+                return null;
+            }
+            //return convert(dal.Read(convert(item).Result));
         }
 
         public async Task<List<BlEichudModel>> ReadAll()

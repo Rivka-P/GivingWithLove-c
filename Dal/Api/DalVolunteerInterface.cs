@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dal.Api
 {
-    public interface DalSubProjectInterfase:ICrud<Volunteer>
+    public interface DalVolunteerInterface : ICrud<Volunteer>
     {
 
     }

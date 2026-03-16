@@ -4,6 +4,7 @@ F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\ה
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
 F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+<<<<<<< HEAD
 D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.deps.json
 D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.dll
 D:\givingWithLove\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.pdb
@@ -20,3 +21,21 @@ D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.dll
 D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\refint\Bl.dll
 D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.pdb
 D:\givingWithLove\GivingWithLove-c\Bl\obj\Debug\net8.0\ref\Bl.dll
+=======
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.deps.json
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.dll
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.pdb
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\bin\Debug\net8.0\Dal.dll
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\bin\Debug\net8.0\Dal.pdb
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.Up2Date
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.dll
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\refint\Bl.dll
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.pdb
+D:\אדלר יפי\C#\GivingWithLove-c\Bl\obj\Debug\net8.0\ref\Bl.dll
+>>>>>>> refs/remotes/origin/main

@@ -5,10 +5,17 @@
     "version": "1.0"
   },
   "paths": {
+<<<<<<< HEAD
     "/api/Eichud": {
       "get": {
         "tags": [
           "Eichud"
+=======
+    "/api/Project": {
+      "get": {
+        "tags": [
+          "Project"
+>>>>>>> refs/remotes/origin/main
         ],
         "responses": {
           "200": {
@@ -18,7 +25,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/BlEichudModel"
+=======
+                    "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
                   }
                 }
               },
@@ -26,7 +37,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/BlEichudModel"
+=======
+                    "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
                   }
                 }
               },
@@ -34,7 +49,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/BlEichudModel"
+=======
+                    "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
                   }
                 }
               }
@@ -44,38 +63,82 @@
       },
       "post": {
         "tags": [
+<<<<<<< HEAD
           "Eichud"
+=======
+          "Project"
+>>>>>>> refs/remotes/origin/main
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             }
           }
         },
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
           }
         }
       }
     },
+<<<<<<< HEAD
     "/api/Eichud/{id}": {
       "get": {
         "tags": [
           "Eichud"
+=======
+    "/api/Project/{id}": {
+      "get": {
+        "tags": [
+          "Project"
+>>>>>>> refs/remotes/origin/main
         ],
         "parameters": [
           {
@@ -94,17 +157,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/BlEichudModel"
+=======
+                  "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/BlEichudModel"
+=======
+                  "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/BlEichudModel"
+=======
+                  "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -113,7 +188,11 @@
       },
       "put": {
         "tags": [
+<<<<<<< HEAD
           "Eichud"
+=======
+          "Project"
+>>>>>>> refs/remotes/origin/main
         ],
         "parameters": [
           {
@@ -130,30 +209,67 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             }
           }
         },
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
           }
         }
       },
       "delete": {
         "tags": [
+<<<<<<< HEAD
           "Eichud"
+=======
+          "Project"
+>>>>>>> refs/remotes/origin/main
         ],
         "parameters": [
           {
@@ -169,17 +285,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlEichudModel"
+=======
+                "$ref": "#/components/schemas/BlProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             }
           }
@@ -208,10 +336,17 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Position": {
       "get": {
         "tags": [
           "Position"
+=======
+    "/api/SubProject": {
+      "get": {
+        "tags": [
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
         ],
         "responses": {
           "200": {
@@ -221,7 +356,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/BlPositionModel"
+=======
+                    "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
                   }
                 }
               },
@@ -229,7 +368,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/BlPositionModel"
+=======
+                    "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
                   }
                 }
               },
@@ -237,7 +380,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/BlPositionModel"
+=======
+                    "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
                   }
                 }
               }
@@ -247,38 +394,82 @@
       },
       "post": {
         "tags": [
+<<<<<<< HEAD
           "Position"
+=======
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             }
           }
         },
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
           }
         }
       }
     },
+<<<<<<< HEAD
     "/api/Position/{id}": {
       "get": {
         "tags": [
           "Position"
+=======
+    "/api/SubProject/{id}": {
+      "get": {
+        "tags": [
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
         ],
         "parameters": [
           {
@@ -297,17 +488,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/BlPositionModel"
+=======
+                  "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/BlPositionModel"
+=======
+                  "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/BlPositionModel"
+=======
+                  "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -316,7 +519,11 @@
       },
       "put": {
         "tags": [
+<<<<<<< HEAD
           "Position"
+=======
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
         ],
         "parameters": [
           {
@@ -333,30 +540,67 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             }
           }
         },
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+>>>>>>> refs/remotes/origin/main
           }
         }
       },
       "delete": {
         "tags": [
+<<<<<<< HEAD
           "Position"
+=======
+          "SubProject"
+>>>>>>> refs/remotes/origin/main
         ],
         "parameters": [
           {
@@ -372,17 +616,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/BlPositionModel"
+=======
+                "$ref": "#/components/schemas/BlSubProjectModel"
+>>>>>>> refs/remotes/origin/main
               }
             }
           }
@@ -517,26 +773,38 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/BLVolunteerModel"
                   }
+=======
+                  "$ref": "#/components/schemas/BLVolunteerModel"
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/BLVolunteerModel"
                   }
+=======
+                  "$ref": "#/components/schemas/BLVolunteerModel"
+>>>>>>> refs/remotes/origin/main
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/BLVolunteerModel"
                   }
+=======
+                  "$ref": "#/components/schemas/BLVolunteerModel"
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -1062,6 +1330,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "BlEichudModel": {
         "type": "object",
         "properties": {
@@ -1106,10 +1375,25 @@
             "nullable": true
           },
           "zipCode": {
+=======
+      "BlProjectModel": {
+        "type": "object",
+        "properties": {
+          "projectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectName": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectManagerCode": {
+>>>>>>> refs/remotes/origin/main
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
+<<<<<<< HEAD
           "housePhone": {
             "type": "string",
             "nullable": true
@@ -1121,10 +1405,16 @@
           "shver": {
             "type": "string",
             "nullable": true
+=======
+          "domainCode": {
+            "type": "integer",
+            "format": "int32"
+>>>>>>> refs/remotes/origin/main
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "BlPositionModel": {
         "type": "object",
         "properties": {
@@ -1135,6 +1425,32 @@
           "positionName": {
             "type": "string",
             "nullable": true
+=======
+      "BlSubProjectModel": {
+        "type": "object",
+        "properties": {
+          "subProjectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subProjectName": {
+            "type": "string",
+            "nullable": true
+          },
+          "estimatedTime": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "estimatedCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+>>>>>>> refs/remotes/origin/main
           }
         },
         "additionalProperties": false

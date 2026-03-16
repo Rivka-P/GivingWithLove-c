@@ -59,9 +59,23 @@ namespace Dal.Services
 
         public async Task<Eichud> Read(int id)
         {
-            Eichud e = dbm.Eichuds.Where(x => x.EichudCode == id).FirstOrDefault();
+            Eichud e = dbm.Eichuds.ToList().Find(x => x.EichudCode == id) ?? throw new ObjectNotFoundException  ();
             return e;
+<<<<<<< HEAD
         }
+=======
+        }
+
+        //public object Read(Bl.BLModels.BlEichudModel item)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public object Read(Bl.BLModels.BlEichudModel item)
+        //{
+        //    throw new NotImplementedException();
+        //}
+>>>>>>> refs/remotes/origin/main
 
         public async Task<List<Eichud>> ReadAll()
         {

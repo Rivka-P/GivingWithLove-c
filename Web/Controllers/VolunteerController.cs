@@ -27,10 +27,9 @@ namespace Web.Controllers
 
         // GET api/<VolunteerController>/5
         [HttpGet("{id}")]
-        public Task<List<BLVolunteerModel>> Get(int id)
-        {
-            return bl.Volunteer.ReadAll();
-            //return bl.Volunteer.Read(id).Result;
+        public Task<BLVolunteerModel> Get(int id)
+        {                   
+            return bl.Volunteer.Read(id);
         }
 
         // POST api/<VolunteerController>

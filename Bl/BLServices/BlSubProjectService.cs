@@ -20,8 +20,7 @@ namespace Bl.BLServices
 
         private SubProject Convert(BlSubProjectModel s)
         {
-            return new SubProject()
-            {
+            return new SubProject() {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,
@@ -31,8 +30,7 @@ namespace Bl.BLServices
         }
         private BlSubProjectModel Convert(SubProject s)
         {
-            return new BlSubProjectModel()
-            {
+            return new BlSubProjectModel() {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,

@@ -34,9 +34,11 @@ namespace Dal.Services
             db.SaveChanges();
         }
 
-        public Task<SubProject> Read(int id)
+        public async Task<SubProject> Read(int id)
         {
-            throw new NotImplementedException();
+
+            SubProject sp = db.SubProjects.ToList().Find(v => v.SubProjectCode == id) ?? throw new ObjectNotFoundException();
+            return sp;
 
         }
 

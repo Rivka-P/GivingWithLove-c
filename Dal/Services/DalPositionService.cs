@@ -41,7 +41,11 @@ namespace Dal.Services
 
         public async Task<Position> Read(int id)
         {
+<<<<<<< HEAD
             Position p = mydb.Positions.Where(x=> x.positionCode == id).FirstOrDefault();
+=======
+            Position p = mydb.Positions.ToList().Find(x=> x.PositionCode == id)??throw new ObjectNotFoundException();
+>>>>>>> refs/remotes/origin/main
             return p;
         }
 
