@@ -11,7 +11,7 @@ public partial class Project
 
     public int? ProjectManagerCode { get; set; }
 
-    public int DomainCode { get; set; }
+    public int? DomainCode { get; set; } 
 
     public virtual Project DomainCodeNavigation { get; set; } = null!;
 

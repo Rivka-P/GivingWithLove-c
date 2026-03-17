@@ -22,7 +22,6 @@ namespace Dal.Services
         {
             db.Volunteers.Add(item);
             db.SaveChanges();
-
             
         }
 
