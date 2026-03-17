@@ -1,11 +1,11 @@
 ﻿using Dal.Api;
 using Dal.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Dal.Services
 {
     public class DalVolunteerDomainService : DalVolunteerDomainInterface

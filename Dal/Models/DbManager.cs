@@ -32,7 +32,11 @@ public partial class DbManager : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\אדלר יפי\\C#\\GivingWithLove-c\\Dal\\GWLData.mdf\";Integrated Security = True;Connect Timeout=30\n");
+        //Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\GWLData.mdf;Integrated Security = True
+        => optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\GWLData.mdf;Integrated Security=True;Connect Timeout=30\n");
+        //=> optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\givingWithLove\\GivingWithLove-c\\Dal\\GWLData.mdf;Integrated Security=True;Connect Timeout=30");
+    //Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename="F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\GWLData.mdf";Integrated Security = True
+        //=> optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\אדלר יפי\\C#\\GivingWithLove-c\\Dal\\GWLData.mdf\";Integrated Security = True;Connect Timeout=30\n");
    // Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename="D:\אדלר יפי\C#\GivingWithLove-c\Dal\GWLData.mdf";Integrated Security = True
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -86,9 +90,9 @@ public partial class DbManager : DbContext
 
         modelBuilder.Entity<Position>(entity =>
         {
-            entity.HasKey(e => e.PositionCode).HasName("PK__Position__83745B0338CA6DCA");
+            entity.HasKey(e => e.positionCode).HasName("PK__Position__83745B0338CA6DCA");
 
-            entity.Property(e => e.PositionName).HasMaxLength(50);
+            entity.Property(e => e.positionName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<Project>(entity =>

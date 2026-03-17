@@ -14,6 +14,9 @@ namespace Dal.Api
         public DalVolunteerDomainInterface VolunteerDomains { get; }
         public DalSubProjectInterface SubProject { get; }
         public DalPositionInterface Position { get; }
+
+        //public DalProjectInterface Project { get; }
+
         public DalProjectInterface Project { get; }
 
     }

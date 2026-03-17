@@ -95,9 +95,7 @@ namespace Bl.BLServices
         public async Task<List<BlEichudModel>> ReadAll()
         {
             List<BlEichudModel> list = new List<BlEichudModel>();
-
-            convert(dal.ReadAll().Result);
-
+            dal.ReadAll().Result.ForEach(item => { list.Add(convert(item)); });
             return list;
         }
 
@@ -105,5 +103,6 @@ namespace Bl.BLServices
         {
             dal.Update(convert(item));
         }
+
     }
 }

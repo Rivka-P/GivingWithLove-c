@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Web.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class VolunteeringController : ControllerBase
     {
@@ -25,9 +25,9 @@ namespace Web.Controllers
 
         // GET api/<VolunteeringController>/5
         [HttpGet("{id}")]
-        public BlVolunteeringModel Get(int id)
+        public Task<BlVolunteeringModel> Get(int id)
         {
-            return bl.Volunteerings.Read(id).Result;
+            return bl.Volunteerings.Read(id);
         }
 
         // POST api/<VolunteeringController>
@@ -49,7 +49,7 @@ namespace Web.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            bl.Volunteerings.Delete(Get(id));
+            bl.Volunteerings.Delete(Get(id).Result);
         }
     }
 }
