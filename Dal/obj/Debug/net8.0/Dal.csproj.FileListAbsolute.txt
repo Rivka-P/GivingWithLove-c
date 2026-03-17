@@ -1,19 +1,7 @@
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.sourcelink.json
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\bin\Debug\net8.0\Dal.deps.json
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\bin\Debug\net8.0\Dal.dll
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\bin\Debug\net8.0\Dal.pdb
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.dll
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\refint\Dal.dll
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.pdb
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
-F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\obj\Debug\net8.0\ref\Dal.dll
-<<<<<<< HEAD
+D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.deps.json
+D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
+D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
+D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
@@ -23,41 +11,5 @@ D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.sourcelink.
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.dll
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\refint\Dal.dll
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.pdb
-D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.deps.json
-D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
-D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
-D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
-=======
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.sourcelink.json
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.dll
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\refint\Dal.dll
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.pdb
-D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.deps.json
-D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
-D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
-D:\givingWithLove\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
-D:\givingWithLove\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.sourcelink.json
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.dll
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\refint\Dal.dll
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.pdb
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.deps.json
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
-D:\אדלר יפי\C#\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
->>>>>>> refs/remotes/origin/main

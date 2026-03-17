@@ -1,27 +1,15 @@
 [
   {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.EichudController",
     "Method": "Get",
     "RelativePath": "api/Eichud",
-=======
-    "ContainingType": "Web.Controllers.ProjectController",
-    "Method": "Get",
-    "RelativePath": "api/Project",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BlEichudModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
-        "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BlProjectModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
->>>>>>> refs/remotes/origin/main
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -32,57 +20,31 @@
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.EichudController",
     "Method": "Post",
     "RelativePath": "api/Eichud",
-=======
-    "ContainingType": "Web.Controllers.ProjectController",
-    "Method": "Post",
-    "RelativePath": "api/Project",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
         "Name": "value",
         "Type": "Bl.BLModels.BlEichudModel",
-=======
-        "Name": "s",
-        "Type": "Bl.BLModels.BlProjectModel",
->>>>>>> refs/remotes/origin/main
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "System.Void",
         "MediaTypes": [],
-=======
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
->>>>>>> refs/remotes/origin/main
         "StatusCode": 200
       }
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.EichudController",
     "Method": "Get",
     "RelativePath": "api/Eichud/{id}",
-=======
-    "ContainingType": "Web.Controllers.ProjectController",
-    "Method": "Get",
-    "RelativePath": "api/Project/{id}",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -95,11 +57,7 @@
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "Bl.BLModels.BlEichudModel",
-=======
-        "Type": "Bl.BLModels.BlProjectModel",
->>>>>>> refs/remotes/origin/main
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -110,15 +68,9 @@
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.EichudController",
     "Method": "Put",
     "RelativePath": "api/Eichud/{id}",
-=======
-    "ContainingType": "Web.Controllers.ProjectController",
-    "Method": "Put",
-    "RelativePath": "api/Project/{id}",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -129,55 +81,30 @@
         "IsRequired": true
       },
       {
-<<<<<<< HEAD
         "Name": "value",
         "Type": "Bl.BLModels.BlEichudModel",
-=======
-        "Name": "s",
-        "Type": "Bl.BLModels.BlProjectModel",
->>>>>>> refs/remotes/origin/main
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "System.Void",
         "MediaTypes": [],
-=======
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
->>>>>>> refs/remotes/origin/main
         "StatusCode": 200
       }
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.EichudController",
     "Method": "Delete",
     "RelativePath": "api/Eichud/{id}",
-=======
-    "ContainingType": "Web.Controllers.ProjectController",
-    "Method": "Delete",
-    "RelativePath": "api/Project/{id}",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
         "Name": "id",
         "Type": "Bl.BLModels.BlEichudModel",
-=======
-        "Name": "s",
-        "Type": "Bl.BLModels.BlProjectModel",
->>>>>>> refs/remotes/origin/main
         "IsRequired": true
       },
       {
@@ -199,26 +126,16 @@
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.PositionController",
     "Method": "Get",
     "RelativePath": "api/Position",
-=======
-    "ContainingType": "Web.Controllers.SubProjectController",
-    "Method": "Get",
-    "RelativePath": "api/SubProject",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BlPositionModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
-        "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BlSubProjectModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
->>>>>>> refs/remotes/origin/main
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -229,57 +146,31 @@
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.PositionController",
     "Method": "Post",
     "RelativePath": "api/Position",
-=======
-    "ContainingType": "Web.Controllers.SubProjectController",
-    "Method": "Post",
-    "RelativePath": "api/SubProject",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
         "Name": "value",
         "Type": "Bl.BLModels.BlPositionModel",
-=======
-        "Name": "s",
-        "Type": "Bl.BLModels.BlSubProjectModel",
->>>>>>> refs/remotes/origin/main
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "System.Void",
         "MediaTypes": [],
-=======
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
->>>>>>> refs/remotes/origin/main
         "StatusCode": 200
       }
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.PositionController",
     "Method": "Get",
     "RelativePath": "api/Position/{id}",
-=======
-    "ContainingType": "Web.Controllers.SubProjectController",
-    "Method": "Get",
-    "RelativePath": "api/SubProject/{id}",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -292,11 +183,7 @@
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "Bl.BLModels.BlPositionModel",
-=======
-        "Type": "Bl.BLModels.BlSubProjectModel",
->>>>>>> refs/remotes/origin/main
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -307,15 +194,9 @@
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.PositionController",
     "Method": "Put",
     "RelativePath": "api/Position/{id}",
-=======
-    "ContainingType": "Web.Controllers.SubProjectController",
-    "Method": "Put",
-    "RelativePath": "api/SubProject/{id}",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -326,55 +207,30 @@
         "IsRequired": true
       },
       {
-<<<<<<< HEAD
         "Name": "value",
         "Type": "Bl.BLModels.BlPositionModel",
-=======
-        "Name": "s",
-        "Type": "Bl.BLModels.BlSubProjectModel",
->>>>>>> refs/remotes/origin/main
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "System.Void",
         "MediaTypes": [],
-=======
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
->>>>>>> refs/remotes/origin/main
         "StatusCode": 200
       }
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.PositionController",
     "Method": "Delete",
     "RelativePath": "api/Position/{id}",
-=======
-    "ContainingType": "Web.Controllers.SubProjectController",
-    "Method": "Delete",
-    "RelativePath": "api/SubProject/{id}",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
         "Name": "id",
         "Type": "Bl.BLModels.BlPositionModel",
-=======
-        "Name": "s",
-        "Type": "Bl.BLModels.BlSubProjectModel",
->>>>>>> refs/remotes/origin/main
         "IsRequired": true
       },
       {
@@ -396,7 +252,274 @@
     ]
   },
   {
->>>>>>> refs/remotes/origin/main
+    "ContainingType": "Web.Controllers.ProjectController",
+    "Method": "Get",
+    "RelativePath": "api/Project",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BlProjectModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.ProjectController",
+    "Method": "Post",
+    "RelativePath": "api/Project",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "s",
+        "Type": "Bl.BLModels.BlProjectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.ProjectController",
+    "Method": "Get",
+    "RelativePath": "api/Project/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Bl.BLModels.BlProjectModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.ProjectController",
+    "Method": "Put",
+    "RelativePath": "api/Project/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "s",
+        "Type": "Bl.BLModels.BlProjectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.ProjectController",
+    "Method": "Delete",
+    "RelativePath": "api/Project/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "s",
+        "Type": "Bl.BLModels.BlProjectModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.SubProjectController",
+    "Method": "Get",
+    "RelativePath": "api/SubProject",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BlSubProjectModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.SubProjectController",
+    "Method": "Post",
+    "RelativePath": "api/SubProject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "s",
+        "Type": "Bl.BLModels.BlSubProjectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.SubProjectController",
+    "Method": "Get",
+    "RelativePath": "api/SubProject/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Bl.BLModels.BlSubProjectModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.SubProjectController",
+    "Method": "Put",
+    "RelativePath": "api/SubProject/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "s",
+        "Type": "Bl.BLModels.BlSubProjectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.SubProjectController",
+    "Method": "Delete",
+    "RelativePath": "api/SubProject/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "s",
+        "Type": "Bl.BLModels.BlSubProjectModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Web.Controllers.VolunteerController",
     "Method": "Get",
     "RelativePath": "api/Volunteer",
@@ -458,15 +581,7 @@
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
-        "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BLVolunteerModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
-<<<<<<< HEAD
-        "Type": "System.Collections.Generic.List\u00601[[Bl.BLModels.BLVolunteerModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
         "Type": "Bl.BLModels.BLVolunteerModel",
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -657,35 +772,8 @@
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
-<<<<<<< HEAD
     "Method": "Get",
     "RelativePath": "api/Volunteering",
-=======
-    "Method": "Delete",
-    "RelativePath": "api/Volunteering/Delete/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Web.Controllers.VolunteeringController",
-    "Method": "Get",
-    "RelativePath": "api/Volunteering/Get",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -704,39 +792,8 @@
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
-<<<<<<< HEAD
     "Method": "Post",
     "RelativePath": "api/Volunteering",
-=======
-    "Method": "Get",
-    "RelativePath": "api/Volunteering/Get/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Bl.BLModels.BlVolunteeringModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Web.Controllers.VolunteeringController",
-    "Method": "Post",
-    "RelativePath": "api/Volunteering/Post",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -757,7 +814,6 @@
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
-<<<<<<< HEAD
     "Method": "Get",
     "RelativePath": "api/Volunteering/{id}",
     "HttpMethod": "GET",
@@ -786,10 +842,6 @@
     "ContainingType": "Web.Controllers.VolunteeringController",
     "Method": "Put",
     "RelativePath": "api/Volunteering/{id}",
-=======
-    "Method": "Put",
-    "RelativePath": "api/Volunteering/Put/{id}",
->>>>>>> refs/remotes/origin/main
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -814,7 +866,6 @@
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Web.Controllers.VolunteeringController",
     "Method": "Delete",
     "RelativePath": "api/Volunteering/{id}",
@@ -837,8 +888,6 @@
     ]
   },
   {
-=======
->>>>>>> refs/remotes/origin/main
     "ContainingType": "Web.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
