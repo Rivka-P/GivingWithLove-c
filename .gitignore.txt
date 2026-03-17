@@ -28,3 +28,6 @@ packages/
 .DS_Store
 Thumbs.db
 
+bin/
+obj/
+.vs/
