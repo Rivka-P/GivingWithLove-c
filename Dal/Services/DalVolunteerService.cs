@@ -23,7 +23,6 @@ namespace Dal.Services
         {
             db.Volunteers.Add(item);
             db.SaveChanges();
-
             
         }
 
@@ -53,12 +52,12 @@ namespace Dal.Services
         }
         public async Task<Volunteer> Read(int id)
         {
-            Volunteer v = db.Volunteers.ToList().Find(v => v.VolunteerCode == id)??throw new ObjectNotFoundException();
+            Volunteer v = ReadAll().Result.Find(v => v.VolunteerCode == id)??throw new ObjectNotFoundException();
             return v;
         }
 
 
-        public async Task<List<Volunteer>> ReadAll() => db.Volunteers.ToList();
+        public async Task<List<Volunteer>> ReadAll() => db.Volunteers.Include(x=> x.VolunteerCodeNavigation).ToList();
         //{
         //    throw new NotImplementedException();
         //}

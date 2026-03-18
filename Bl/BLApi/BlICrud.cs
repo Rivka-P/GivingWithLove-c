@@ -14,7 +14,7 @@ namespace Bl.BLApi
 
         void Update(T item);
 
-       Task<T> Read(int id);
+        Task<T> Read(int id);
 
         Task<List<T>> ReadAll();
 

@@ -1,4 +1,5 @@
-﻿using Bl.BLModels;
+﻿using Bl.BLApi;
+using Bl.BLModels;
 using Dal.Api;
 using Dal.Models;
 using System;
@@ -12,32 +13,62 @@ namespace Bl.BLServices
     public class BlVolunteeringService:BlVolunteeringInterface
     {
         DalVolunteeringInterface dal;
-        public BlVolunteeringService(IDal dal)
+        BlVolunteerInterface volunteerInterface;
+        BlProjectInterface projectInterface;
+        BlSubProjectInterface subProjectInterface;
+        public BlVolunteeringService(IDal dal,BlVolunteerInterface volunteerInterface,BlProjectInterface projectInterface,BlSubProjectInterface subProjectInterface )
         {
             this.dal = dal.Volunteerings;
+            this.volunteerInterface = volunteerInterface;
+            this.subProjectInterface = subProjectInterface;
+            this.projectInterface = projectInterface;
         }
-        private BLModels.BlVolunteeringModel Convert(Volunteering v)
+        private BlVolunteeringModel Convert(Volunteering v)
         {
-            return new BLModels.BlVolunteeringModel() {
-                VolunteeringCode=v.VolunteeringCode,
+           BlVolunteeringModel blV=  new BlVolunteeringModel()
+            {
+                VolunteeringCode = v.VolunteeringCode,
                 DateOfVolunteering = v.DateOfVolunteering,
                 MatcherCode = v.MatcherCode,
+                //MatcherName = ((BLVolunteerService)volunteerInterface).Read(v.MatcherCode ?? 0).Result.VolunteerCodeNavigation.FirstName + " " + ((BLVolunteerService)volunteerInterface).Read(v.MatcherCode ?? 0).Result.VolunteerCodeNavigation.FamilyName,
                 VolunteerCode = v.VolunteerCode,
+                //VolunteerName = ((BLVolunteerService)volunteerInterface).Read(v.VolunteerCode ?? 0).Result.VolunteerCodeNavigation.FirstName + " " + ((BLVolunteerService)volunteerInterface).Read(v.VolunteerCode ?? 0).Result.VolunteerCodeNavigation.FamilyName,
                 PoorManCode = v.PoorManCode,
+                //PoorManName = ((BLVolunteerService)volunteerInterface).Read(v.PoorManCode ?? 0).Result.VolunteerCodeNavigation.FirstName + " " + ((BLVolunteerService)volunteerInterface).Read(v.PoorManCode ?? 0).Result.VolunteerCodeNavigation.FamilyName,
                 ProjectCode = v.ProjectCode,
-                SubProjectCode = v.SubProjectCode
+                SubProjectCode = v.SubProjectCode,
+                
             };
+           if( v.MatcherCode != null)
+            {
+
+
+              blV.MatcherName=  ((BLVolunteerService)volunteerInterface).Read(v.MatcherCode ?? 0).Result.VolunteerCodeNavigation.FirstName + " " + ((BLVolunteerService)volunteerInterface).Read(v.MatcherCode ?? 0).Result.VolunteerCodeNavigation.FamilyName;
+              blV.VolunteerName =  ((BLVolunteerService)volunteerInterface).Read(v.VolunteerCode ?? 0).Result.VolunteerCodeNavigation.FirstName + " " + ((BLVolunteerService)volunteerInterface).Read(v.VolunteerCode ?? 0).Result.VolunteerCodeNavigation.FamilyName;
+              blV.PoorManName = ((BLVolunteerService)volunteerInterface).Read(v.PoorManCode ?? 0).Result.VolunteerCodeNavigation.FirstName + " " + ((BLVolunteerService)volunteerInterface).Read(v.PoorManCode ?? 0).Result.VolunteerCodeNavigation.FamilyName;
+              
+            }
+           if(v.ProjectCode != null)
+                blV.ProjectName = ((BlProjectService)projectInterface).Read(v.ProjectCode ?? 0).Result.ProjectName;
+           if(v.SubProjectCode != null)
+                
+                blV.SubProjectName = ((BlSubProjectService)subProjectInterface).Read(v.SubProjectCode ?? 0).Result.SubProjectName;
+            return blV;
+            
+              
+
+             
         }
-        private List<BLModels.BlVolunteeringModel> Convert(List<Volunteering> v)
+        private List<BlVolunteeringModel> Convert(List<Volunteering> v)
         {
-            List<BLModels.BlVolunteeringModel> list = new List<BLModels.BlVolunteeringModel>();
+            List<BlVolunteeringModel> list = new List<BlVolunteeringModel>();
             foreach (var item in v)
             {
                 list.Add(Convert(item));
             }
             return list;
         }
-        private Volunteering Convert(BLModels.BlVolunteeringModel v)
+        private Volunteering Convert(BlVolunteeringModel v)
         {
             return new Volunteering() {
                 DateOfVolunteering = v.DateOfVolunteering,
@@ -45,43 +76,44 @@ namespace Bl.BLServices
                 VolunteerCode = v.VolunteerCode,
                 PoorManCode=v.PoorManCode,
                 ProjectCode=v.ProjectCode,
-                SubProjectCode=v.SubProjectCode
+                SubProjectCode=v.SubProjectCode,
+                
                   };
         }
 
-        public void Create(BLModels.BlVolunteeringModel item)
+        public void Create(BlVolunteeringModel item)
         {
             dal.Create(Convert(item));
         }
 
-        public void Delete(BLModels.BlVolunteeringModel item)
+        public void Delete(BlVolunteeringModel item)
         {
             dal.Delete(Convert(item));
         }
 
 
-        public async Task<List<BLModels.BlVolunteeringModel>> ReadAll()
+        public async Task<List<BlVolunteeringModel>> ReadAll()
         {
-            List<BLModels.BlVolunteeringModel> list = new List<BLModels.BlVolunteeringModel>();
+            List<BlVolunteeringModel> list = new List<BlVolunteeringModel>();
 
             dal.ReadAll().Result.ForEach(item => { list.Add(Convert(item)); });
 
             return list;
         }
 
-        public void Update(BLModels.BlVolunteeringModel item)
+        public void Update(BlVolunteeringModel item)
         {
             dal.Update(Convert(item));
 
         }
-        public async Task<List<BLModels.BlVolunteeringModel>> Read(Func<BLModels.BlVolunteeringModel, bool> func)
+        public async Task<List<BlVolunteeringModel>> Read(Func<BlVolunteeringModel, bool> func)
         {
-            List<BLModels.BlVolunteeringModel> list = Convert(dal.Read((Func<Volunteering, bool>)func).Result);
+            List<BlVolunteeringModel> list = Convert(dal.Read((Func<Volunteering, bool>)func).Result);
             return list;
 
         }
 
-        public async Task<BLModels.BlVolunteeringModel> Read(int id)
+        public async Task<BlVolunteeringModel> Read(int id)
         {
            //BLVolunteeringModel model=Convert(dal.ReadAll().Result.Find(v=>v.VolunteerCode==id));
            return Convert(dal.Read(id).Result);

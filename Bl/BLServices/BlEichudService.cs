@@ -17,7 +17,7 @@ namespace Bl.BLServices
         {
             this.dal = dal.Eichud;
         }
-        private  BlEichudModel convert(Eichud eichud)
+        public  BlEichudModel convert(Eichud eichud)
         {
             return new BlEichudModel(){
                 EichudCode = eichud.EichudCode,
@@ -36,7 +36,7 @@ namespace Bl.BLServices
                 Shver = eichud.Shver
             };
         }
-        private Eichud convert(BlEichudModel eichud)
+        public Eichud convert(BlEichudModel eichud)
         {
             return new Eichud()
             {

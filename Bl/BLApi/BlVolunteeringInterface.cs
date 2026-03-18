@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dal.Api
 {
-    public interface BlVolunteeringInterface:BlICrud<Bl.BLModels.BlVolunteeringModel>
+    public interface BlVolunteeringInterface:BlICrud<BlVolunteeringModel>
     {
 
     }

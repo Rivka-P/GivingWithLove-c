@@ -10,6 +10,7 @@ namespace Bl.BLModels
     public class BLVolunteerModel
     {
         public int VolunteerCode { get; set; }
+       
 
         public int? PositionCode { get; set; }
 
@@ -17,7 +18,7 @@ namespace Bl.BLModels
 
         //public virtual ICollection<Project> Projects { get; set; } = new List<Project>();
 
-        //public virtual Eichud VolunteerCodeNavigation { get; set; } = null!;
+        public  BlEichudModel? VolunteerCodeNavigation { get; set; } = null!;
 
         //public virtual ICollection<BlVolunteeringModel> VolunteerDomains { get; set; } = new List<BlVolunteeringModel>();
 

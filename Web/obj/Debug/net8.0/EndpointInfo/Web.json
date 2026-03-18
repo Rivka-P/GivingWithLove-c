@@ -161,29 +161,11 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlEichudModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlEichudModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlEichudModel"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK",
@@ -1517,6 +1499,9 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "volunteerCodeNavigation": {
+            "$ref": "#/components/schemas/BlEichudModel"
           }
         },
         "additionalProperties": false
@@ -1684,9 +1669,17 @@
             "format": "int32",
             "nullable": true
           },
+          "volunteerName": {
+            "type": "string",
+            "nullable": true
+          },
           "poorManCode": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "poorManName": {
+            "type": "string",
             "nullable": true
           },
           "matcherCode": {
@@ -1694,14 +1687,26 @@
             "format": "int32",
             "nullable": true
           },
+          "matcherName": {
+            "type": "string",
+            "nullable": true
+          },
           "projectCode": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
+          "projectName": {
+            "type": "string",
+            "nullable": true
+          },
           "subProjectCode": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "subProjectName": {
+            "type": "string",
             "nullable": true
           }
         },

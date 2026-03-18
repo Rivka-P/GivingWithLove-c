@@ -13,9 +13,11 @@ namespace Bl.BLServices
     public class BLVolunteerService : BlVolunteerInterface
     {
         DalVolunteerInterface Volunteer;
-        public BLVolunteerService(IDal dal)
+        BlEichudInterface BlEichud;
+        public BLVolunteerService(IDal dal,BlEichudInterface blEichud)
         {
             this.Volunteer = dal.Volunteer;
+            this.BlEichud = blEichud;
         }
         private Volunteer Convert(BLVolunteerModel v)
         {
@@ -23,7 +25,7 @@ namespace Bl.BLServices
         }
         private BLVolunteerModel Convert(Volunteer v)
         {
-            return new BLVolunteerModel() { VolunteerCode = v.VolunteerCode, PositionCode = v.PositionCode };
+            return new BLVolunteerModel() { VolunteerCode = v.VolunteerCode, PositionCode = v.PositionCode ,VolunteerCodeNavigation=((BlEichudService) BlEichud).convert( v.VolunteerCodeNavigation)};
         }
         private List<BLVolunteerModel> Convert(List<Volunteer> c)
         {
@@ -47,8 +49,7 @@ namespace Bl.BLServices
 
         public async Task<BLVolunteerModel> Read(int id)
         {
-            //return Convert(Volunteer.Read(Convert(item)).Result);
-            //return Volunteer.Read.Result(Convert(item));
+            
             try { return Convert(Volunteer.Read(id).Result ); }
             catch (ObjectNotFoundException e) 
             {

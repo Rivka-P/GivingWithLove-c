@@ -1,7 +1,138 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blservices\\blvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blvolunteeringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blmodels\\blvolunteeringmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmodels\\blvolunteeringmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\services\\daleichudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\daleichudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\models\\eichud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\eichud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{156728C7-4307-4E75-9FE9-E19DF65639B3}|Web\\Web.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\web\\controllers\\eichudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{156728C7-4307-4E75-9FE9-E19DF65639B3}|Web\\Web.csproj|solutionrelative:web\\controllers\\eichudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\services\\dalvolunteerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalvolunteerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blservices\\blpositionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blpositionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\models\\volunteerdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\volunteerdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\models\\subproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\subproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\objectnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\objectnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\idal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\idal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\dalvolunteerinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalvolunteerinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\dalvolunteeringinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalvolunteeringinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\dalvolunteerdomaininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalvolunteerdomaininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\dalsubprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalsubprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\dalprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\dalpositioninterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\dalpositioninterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\dal\\api\\daleichudinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77980D90-3196-4662-BDD4-915F036AC23D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\daleichudinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blapi\\blvolunteerdomaininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\blvolunteerdomaininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blapi\\blsubprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\blsubprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blapi\\blprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\blprojectinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blmodels\\blvolunteerdomainmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmodels\\blvolunteerdomainmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blmodels\\blsubprojectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmodels\\blsubprojectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blmodels\\blprojectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmodels\\blprojectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blmodels\\blpositionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blmodels\\blpositionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blservices\\blvolunteerdomainservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blvolunteerdomainservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blservices\\blsubprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blsubprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|d:\\rivkypinter\\gwl_project\\givingwithlove-c\\bl\\blservices\\blprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A3403F8-22FA-4B81-8E2E-948E55BCE114}|Bl\\Bl.csproj|solutionrelative:bl\\blservices\\blprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u05D0\u05D3\u05DC\u05E8_\u05D9\u05E4\u05D9_C__GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Volunteers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u05D0\u05D3\u05DC\u05E8_\u05D9\u05E4\u05D9_C__GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.SubProjects.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +140,432 @@
       "DocumentGroups": [
         {
           "DockedWidth": 8,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BLVolunteeringModel.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BLVolunteeringModel.cs",
+              "RelativeDocumentMoniker": "Bl\\BLModels\\BLVolunteeringModel.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BLVolunteeringModel.cs",
+              "RelativeToolTip": "Bl\\BLModels\\BLVolunteeringModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwB4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T17:06:59.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EichudController.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Web\\Controllers\\EichudController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\EichudController.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Web\\Controllers\\EichudController.cs",
+              "RelativeToolTip": "Web\\Controllers\\EichudController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T16:46:49.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DalEichudService.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Services\\DalEichudService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalEichudService.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Services\\DalEichudService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalEichudService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAvwCYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T16:46:11.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlVolunteeringService.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlVolunteeringService.cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlVolunteeringService.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlVolunteeringService.cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlVolunteeringService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAvwDQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T16:25:44.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DalVolunteerService.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Services\\DalVolunteerService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalVolunteerService.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Services\\DalVolunteerService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalVolunteerService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T16:24:46.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BlPositionService.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlPositionService.cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlPositionService.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlPositionService.cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlPositionService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T17:08:51.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Volunteer.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\Volunteer.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\Volunteer.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\Volunteer.cs",
+              "RelativeToolTip": "Dal\\Models\\Volunteer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:57:24.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SubProject.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\SubProject.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\SubProject.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\SubProject.cs",
+              "RelativeToolTip": "Dal\\Models\\SubProject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:57:23.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Eichud.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\Eichud.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\Eichud.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\Eichud.cs",
+              "RelativeToolTip": "Dal\\Models\\Eichud.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIAzwCUAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:46.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ObjectNotFoundException.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\ObjectNotFoundException.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\ObjectNotFoundException.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\ObjectNotFoundException.cs",
+              "RelativeToolTip": "Dal\\Api\\ObjectNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:35.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDal.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\IDal.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\IDal.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\IDal.cs",
+              "RelativeToolTip": "Dal\\Api\\IDal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:13.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICrud.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\ICrud.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\ICrud.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\ICrud.cs",
+              "RelativeToolTip": "Dal\\Api\\ICrud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:12.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VolunteerDomain.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\VolunteerDomain.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\VolunteerDomain.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\VolunteerDomain.cs",
+              "RelativeToolTip": "Dal\\Models\\VolunteerDomain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:57:25.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DalVolunteerInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalVolunteerInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalVolunteerInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalVolunteerInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalVolunteerInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:11.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\Project.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Models\\Project.cs",
+              "RelativeToolTip": "Dal\\Models\\Project.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T13:29:29.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DalVolunteeringInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalVolunteeringInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalVolunteeringInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalVolunteeringInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalVolunteeringInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:10.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DalVolunteerDomainInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalVolunteerDomainInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalVolunteerDomainInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalVolunteerDomainInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalVolunteerDomainInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:08.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DalSubProjectInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalSubProjectInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalSubProjectInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalSubProjectInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalSubProjectInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:07.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DalProjectInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalProjectInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalProjectInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalProjectInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalProjectInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:05.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DalPositionInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalPositionInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalPositionInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalPositionInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalPositionInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:04.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DalEichudInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalEichudInterface.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\DalEichudInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Api\\DalEichudInterface.cs",
+              "RelativeToolTip": "Dal\\Api\\DalEichudInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:56:03.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BlVolunteerDomainInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLApi\\BlVolunteerDomainInterface.cs",
+              "RelativeDocumentMoniker": "Bl\\BLApi\\BlVolunteerDomainInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLApi\\BlVolunteerDomainInterface.cs",
+              "RelativeToolTip": "Bl\\BLApi\\BlVolunteerDomainInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:55:52.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BlSubProjectInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLApi\\BlSubProjectInterface.cs",
+              "RelativeDocumentMoniker": "Bl\\BLApi\\BlSubProjectInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLApi\\BlSubProjectInterface.cs",
+              "RelativeToolTip": "Bl\\BLApi\\BlSubProjectInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:55:51.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BlProjectInterface.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLApi\\BlProjectInterface.cs",
+              "RelativeDocumentMoniker": "Bl\\BLApi\\BlProjectInterface.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLApi\\BlProjectInterface.cs",
+              "RelativeToolTip": "Bl\\BLApi\\BlProjectInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:55:50.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BlVolunteerDomainModel.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlVolunteerDomainModel.cs",
+              "RelativeDocumentMoniker": "Bl\\BLModels\\BlVolunteerDomainModel.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlVolunteerDomainModel.cs",
+              "RelativeToolTip": "Bl\\BLModels\\BlVolunteerDomainModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:55:40.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BlSubProjectModel.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlSubProjectModel.cs",
+              "RelativeDocumentMoniker": "Bl\\BLModels\\BlSubProjectModel.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlSubProjectModel.cs",
+              "RelativeToolTip": "Bl\\BLModels\\BlSubProjectModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:55:40.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BlPositionModel.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlPositionModel.cs",
+              "RelativeDocumentMoniker": "Bl\\BLModels\\BlPositionModel.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlPositionModel.cs",
+              "RelativeToolTip": "Bl\\BLModels\\BlPositionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:55:38.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BlProjectModel.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlProjectModel.cs",
+              "RelativeDocumentMoniker": "Bl\\BLModels\\BlProjectModel.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLModels\\BlProjectModel.cs",
+              "RelativeToolTip": "Bl\\BLModels\\BlProjectModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T13:30:29.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BlVolunteerDomainService .cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlVolunteerDomainService .cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlVolunteerDomainService .cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlVolunteerDomainService .cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlVolunteerDomainService .cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:54:33.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BlSubProjectService.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlSubProjectService.cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlSubProjectService.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlSubProjectService.cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlSubProjectService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T13:53:00.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BlProjectService.cs",
+              "DocumentMoniker": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlProjectService.cs",
+              "RelativeDocumentMoniker": "Bl\\BLServices\\BlProjectService.cs",
+              "ToolTip": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\BLServices\\BlProjectService.cs",
+              "RelativeToolTip": "Bl\\BLServices\\BlProjectService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T13:38:23.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "dbo.Volunteers.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u05D0\u05D3\u05DC\u05E8_\u05D9\u05E4\u05D9_C__GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Volunteers.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u05D0\u05D3\u05DC\u05E8_\u05D9\u05E4\u05D9_C__GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.Volunteers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-15T13:23:43.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "dbo.SubProjects.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u05D0\u05D3\u05DC\u05E8_\u05D9\u05E4\u05D9_C__GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.SubProjects.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u05D0\u05D3\u05DC\u05E8_\u05D9\u05E4\u05D9_C__GIVINGWITHLOVE_C_DAL_GWLDATA.MDF/True/SqlTable/dbo.SubProjects.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-15T13:40:28.095Z"
             }
           ]
         },

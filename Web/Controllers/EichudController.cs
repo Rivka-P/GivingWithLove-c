@@ -47,14 +47,17 @@ namespace Web.Controllers
 
         // DELETE api/<EichudController>/5
         [HttpDelete("{id}")]
-        public bool Delete(BlEichudModel id)
+        public bool Delete(int id)
         {
             try
             {
-                bl.Eichud.Delete(id);
+                BlEichudModel v = bl.Eichud.ReadAll().Result.Find(e=> e.EichudCode == id);
+                if (v == null)
+                    throw new NullReferenceException("mmm");
+                bl.Eichud.Delete(v);
                 return true;
             }
-            catch { return false; }
+            catch(Exception e) { return false; }
         }
 
     }

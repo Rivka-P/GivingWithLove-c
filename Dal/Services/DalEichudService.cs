@@ -1,5 +1,6 @@
 ﻿using Dal.Api;
 using Dal.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace Dal.Services
                 var item = ReadAll().Result.Find(b => b.EichudCode == id);
                 if (item != null)
                 {
+
                     dbm.Eichuds.Remove(item);
                     dbm.SaveChanges();
                 }
@@ -40,10 +42,8 @@ namespace Dal.Services
 
         public void Delete(Eichud item)
         {
-            if (item == null)
-                throw new ArgumentNullException("item");
-            dbm.Eichuds.Remove(item);
-            dbm.SaveChanges();
+            Delete(item.EichudCode);
+         
         }
 
         public async Task<List<Eichud>> Read(Func<Eichud, bool> func)

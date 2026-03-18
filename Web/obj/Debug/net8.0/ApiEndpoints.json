@@ -104,12 +104,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "Bl.BLModels.BlEichudModel",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

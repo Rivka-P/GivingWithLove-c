@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Dal.Api
 {
-    public class ObjectNotFoundException:Exception
+    public class ObjectNotFoundException : Exception
     {
+        public ObjectNotFoundException()
+        {
+        }
+
+        public ObjectNotFoundException(string? message) : base(message)
+        {
+        }
     }
 }

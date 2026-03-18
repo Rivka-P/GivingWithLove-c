@@ -1,6 +1,7 @@
 ﻿using Bl.BLApi;
 using Bl.BLModels;
 using Dal.Api;
+using Dal.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -20,8 +21,20 @@ namespace Web.Controllers
         [HttpGet]
         public Task<List<BlVolunteeringModel >> Get()
         {
-            return bl.Volunteerings.ReadAll();
-        }
+            //return bl.Volunteerings.ReadAll();
+          
+                var volunteers = bl.Volunteerings.ReadAll();
+                if (volunteers == null )
+                {
+                    return ObjectNotFoundException();
+                }
+                return volunteers;
+            }
+
+        private async Task<List<BlVolunteeringModel>> ObjectNotFoundException()
+        {
+            throw new NotImplementedException();
+        }       
 
         // GET api/<VolunteeringController>/5
         [HttpGet("{id}")]
