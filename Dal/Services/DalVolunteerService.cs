@@ -57,7 +57,7 @@ namespace Dal.Services
         }
 
 
-        public async Task<List<Volunteer>> ReadAll() => db.Volunteers.Include(x=> x.VolunteerCodeNavigation).ToList();
+        public async Task<List<Volunteer>> ReadAll() => db.Volunteers.Include(x=> x.VolunteerCodeNavigation).Include(y=> y.VolunteerDomains).ToList();
         //{
         //    throw new NotImplementedException();
         //}

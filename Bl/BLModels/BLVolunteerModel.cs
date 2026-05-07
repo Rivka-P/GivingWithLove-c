@@ -13,6 +13,7 @@ namespace Bl.BLModels
        
 
         public int? PositionCode { get; set; }
+        public string? PositionName { get; set; }
 
         //public virtual Position? PositionCodeNavigation { get; set; }
 
@@ -20,7 +21,7 @@ namespace Bl.BLModels
 
         public  BlEichudModel? VolunteerCodeNavigation { get; set; } = null!;
 
-        //public virtual ICollection<BlVolunteeringModel> VolunteerDomains { get; set; } = new List<BlVolunteeringModel>();
+        public List<BlVolunteerDomainModel>? VolunteerDomains { get; set; } = new List<BlVolunteerDomainModel>();
 
         //public virtual ICollection<Volunteering> VolunteeringMatcherCodeNavigations { get; set; } = new List<Volunteering>();
 

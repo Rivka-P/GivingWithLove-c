@@ -16,7 +16,7 @@ namespace Bl.BLServices
         {
             this.dal = dal.VolunteerDomains;
         }
-        private BlVolunteerDomainModel Convert(VolunteerDomain v)
+        public BlVolunteerDomainModel Convert(VolunteerDomain v)
         {
             return new BlVolunteerDomainModel() {
 
@@ -28,7 +28,7 @@ namespace Bl.BLServices
              ProjectCode=v.ProjectCode
     };
         }
-        private List<BlVolunteerDomainModel> Convert(List<VolunteerDomain> v)
+        public List<BlVolunteerDomainModel> Convert(List<VolunteerDomain> v)
         {
             List<BlVolunteerDomainModel> list = new List<BlVolunteerDomainModel>();
             foreach (var item in v)
@@ -37,7 +37,7 @@ namespace Bl.BLServices
             }
             return list;
         }
-        private VolunteerDomain Convert(BlVolunteerDomainModel v)
+        public VolunteerDomain Convert(BlVolunteerDomainModel v)
         {
             return new VolunteerDomain() {
                 VolunteerDomainsCode = v.VolunteerDomainsCode,

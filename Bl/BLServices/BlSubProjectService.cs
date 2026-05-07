@@ -66,7 +66,7 @@ namespace Bl.BLServices
 
         public async Task<BlSubProjectModel> Read(int id)
         {
-            try { return Convert(SubProject.Read(id).Result); }
+            try { return   Convert(await SubProject.Read(id)); }
             catch (ObjectNotFoundException e)
             {
                 return null;

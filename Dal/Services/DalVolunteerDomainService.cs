@@ -24,11 +24,16 @@ namespace Dal.Services
                 try
                 {
                     mydb.VolunteerDomains.Add(volunteerDomain);
-                    mydb.SaveChanges();
+                    try {mydb.SaveChanges();}
+                    catch(Exception ex)
+                    {
+                        mydb.VolunteerDomains.Remove(volunteerDomain);
+                        throw new Exception(ex.Message);
+                    }
                 }
-                catch
+                catch(Exception ex)
                 {
-                    throw new Exception();
+                    throw new Exception(ex.Message);
                 }
         }
 

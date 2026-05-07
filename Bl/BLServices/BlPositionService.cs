@@ -53,26 +53,41 @@ namespace Bl.BLServices
         {
             dal.Delete(convert(item));
         }
-
         public async Task<BlPositionModel> Read(int id)
         {
-            return convert(dal.Read(id).Result);
+            var data = await dal.Read(id);
+            return convert(data);
         }
-
+        //public async Task<BlPositionModel> Read(int id)
+        //{
+        //    return convert(dal.Read(id).Result);
+        //}
         public async Task<List<BlPositionModel>> Read(Func<BlPositionModel, bool> func)
         {
-            List<BlPositionModel> list =
-                convert(dal.Read((Func<Position, bool>)func).Result);
-                return list;
+            var data = await dal.ReadAll();
+            return data
+                .Select(convert)
+                .Where(func)
+                .ToList();
         }
-
+        //public async Task<List<BlPositionModel>> Read(Func<BlPositionModel, bool> func)
+        //{
+        //    List<BlPositionModel> list =
+        //        convert(dal.Read((Func<Position, bool>)func).Result);
+        //        return list;
+        //}
         public async Task<List<BlPositionModel>> ReadAll()
         {
-            List<BlPositionModel> list = new List<BlPositionModel>();
-            dal.ReadAll().Result.ForEach(item => { list.Add(convert(item)); });
-            //convert(dal.ReadAll().Result);
-            return list;
+            var data = await dal.ReadAll();
+            return data.Select(item => convert(item)).ToList();
         }
+        //public async Task<List<BlPositionModel>> ReadAll()
+        //{
+        //    List<BlPositionModel> list = new List<BlPositionModel>();
+        //    dal.ReadAll().Result.ForEach(item => { list.Add(convert(item)); });
+        //    //convert(dal.ReadAll().Result);
+        //    return list;
+        //}
 
         public void Update(BlPositionModel item)
         {

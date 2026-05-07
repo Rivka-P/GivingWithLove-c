@@ -14,18 +14,32 @@ namespace Bl.BLServices
     {
         DalVolunteerInterface Volunteer;
         BlEichudInterface BlEichud;
-        public BLVolunteerService(IDal dal,BlEichudInterface blEichud)
+        BlVolunteerDomainInterface BlDomain;
+        BlPositionInterface BlPosition;
+
+        public BLVolunteerService(IDal dal,BlEichudInterface blEichud,BlVolunteerDomainInterface _blDomain ,BlPositionInterface blPosition)
         {
             this.Volunteer = dal.Volunteer;
             this.BlEichud = blEichud;
+            this.BlDomain = _blDomain;
+            this.BlPosition = blPosition;
         }
         private Volunteer Convert(BLVolunteerModel v)
         {
-            return new Volunteer() { VolunteerCode = v.VolunteerCode, PositionCode = v.PositionCode };
+            return new Volunteer() { VolunteerCode = v.VolunteerCode, PositionCode = v.PositionCode,
+            VolunteerDomains = v.VolunteerDomains.Select(x => ((BlVolunteerDomainService)BlDomain).Convert(x)).ToList()
+            };
         }
         private BLVolunteerModel Convert(Volunteer v)
         {
-            return new BLVolunteerModel() { VolunteerCode = v.VolunteerCode, PositionCode = v.PositionCode ,VolunteerCodeNavigation=((BlEichudService) BlEichud).convert( v.VolunteerCodeNavigation)};
+             BLVolunteerModel blv =  new BLVolunteerModel() { VolunteerCode = v.VolunteerCode, PositionCode = v.PositionCode ,VolunteerCodeNavigation=((BlEichudService) BlEichud).convert( v.VolunteerCodeNavigation),
+                VolunteerDomains = v.VolunteerDomains.Select(x => ((BlVolunteerDomainService)BlDomain).Convert(x)).ToList()
+            };
+            if (blv.PositionCode != null)
+            {
+                blv.PositionName = ((BlPositionService)BlPosition).Read(v.PositionCode ?? 0).Result.positionName;
+            }
+            return blv;
         }
         private List<BLVolunteerModel> Convert(List<Volunteer> c)
         {
@@ -38,7 +52,9 @@ namespace Bl.BLServices
         }
 
         public void Create(BLVolunteerModel item)
+
         {
+            item.VolunteerDomains.ToList().ForEach(x => BlDomain.Create(x));
             Volunteer.Create(Convert(item));
         }
 
@@ -73,8 +89,10 @@ namespace Bl.BLServices
         }
 
         public void Update(BLVolunteerModel item)
-        {
-            Volunteer.Update(Convert(item));
+        {   item.VolunteerDomains.ToList().ForEach(x => BlDomain.Create(x));
+            var tt = Convert(item);
+           
+            Volunteer.Update(tt);
         }
     }
 }

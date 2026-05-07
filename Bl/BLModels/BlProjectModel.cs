@@ -19,7 +19,7 @@ namespace Bl.BLModels
 
         //public virtual Project DomainCodeNavigation { get; set; } = null!;
 
-        //public virtual ICollection<Project> InverseDomainCodeNavigation { get; set; } = new List<Project>();
+        public  List<Project> InverseDomainCodeNavigation { get; set; } = new List<Project>();
 
         //public virtual Volunteer? ProjectManagerCodeNavigation { get; set; }
 
