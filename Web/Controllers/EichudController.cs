@@ -1,8 +1,9 @@
 ﻿using Bl.BLApi;
 using Bl.BLModels;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Web.Controllers
 {
@@ -10,55 +11,58 @@ namespace Web.Controllers
     [ApiController]
     public class EichudController : ControllerBase
     {
-
         IBl bl;
         public EichudController(IBl bl)
         {
             this.bl = bl;
         }
-        
+
         // GET: api/<EichudController>
         [HttpGet]
-        public Task<List<BlEichudModel>> Get()
+        public async Task<List<BlEichudModel>> GetAll()
         {
-             return bl.Eichud.ReadAll();
+            return await bl.Eichud.ReadAllAsync();
         }
 
         // GET api/<EichudController>/5
         [HttpGet("{id}")]
-        public Task<BlEichudModel> Get(int id)
+        public async Task<BlEichudModel> Get(int id)
         {
-            return bl.Eichud.Read(id);
+            return await bl.Eichud.ReadAsync(id);
         }
 
         // POST api/<EichudController>
         [HttpPost]
-        public void Post([FromBody] BlEichudModel value)
+        public async Task Post([FromBody] BlEichudModel value)
         {
-            bl.Eichud.Create(value);
+            await bl.Eichud.CreateAsync(value);
         }
 
         // PUT api/<EichudController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] BlEichudModel value)
+        public async Task Put(int id, [FromBody] BlEichudModel value)
         {
-            bl.Eichud.Update(value);
+            await bl.Eichud.UpdateAsync(value);
         }
 
         // DELETE api/<EichudController>/5
         [HttpDelete("{id}")]
-        public bool Delete(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             try
             {
-                BlEichudModel v = bl.Eichud.ReadAll().Result.Find(e=> e.EichudCode == id);
+                var all = await bl.Eichud.ReadAllAsync();
+                var v = all.Find(e => e.EichudCode == id);
                 if (v == null)
-                    throw new NullReferenceException("mmm");
-                bl.Eichud.Delete(v);
+                    throw new NullReferenceException("Eichud not found");
+
+                await bl.Eichud.DeleteAsync(v);
                 return true;
             }
-            catch(Exception e) { return false; }
+            catch
+            {
+                return false;
+            }
         }
-
     }
 }

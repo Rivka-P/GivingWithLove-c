@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl.BLApi
 {
     public interface BlICrud<T>
     {
-        void Delete(T item);
+        Task CreateAsync(T item);
 
-        void Create(T item);
+        Task UpdateAsync(T item);
 
-        void Update(T item);
+        Task DeleteAsync(T item);
 
-        Task<T> Read(int id);
+        Task<T> ReadAsync(int id);
 
-        Task<List<T>> ReadAll();
+        Task<List<T>> ReadAllAsync();
 
-        Task<List<T>> Read(Func<T, bool> func);
+        Task<List<T>> ReadAsync(Func<T, bool> func);
     }
 }

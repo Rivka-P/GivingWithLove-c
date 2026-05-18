@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Dal.Api
 {
     public interface ICrud<T>
     {
-        void Delete(T item);
+        Task CreateAsync(T item);
 
-        void Create(T item);
+        Task UpdateAsync(T item);
 
-        void Update(T item);
-        Task<T> Read(int id);
-        Task<List<T>> ReadAll();
+        Task DeleteAsync(T item);
 
-        Task<List<T>> Read(Func<T, bool> func);
+        Task<T> ReadAsync(int id);
+
+        Task<List<T>> ReadAllAsync();
+
+        Task<List<T>> ReadAsync(Func<T, bool> func);
     }
 }

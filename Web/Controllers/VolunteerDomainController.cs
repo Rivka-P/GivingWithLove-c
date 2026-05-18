@@ -2,8 +2,8 @@
 using Bl.BLModels;
 using Dal.Models;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Web.Controllers
 {
@@ -11,45 +11,58 @@ namespace Web.Controllers
     [ApiController]
     public class VolunteerDomainController : ControllerBase
     {
-        IBl bl;
+        private readonly IBl bl;
         public VolunteerDomainController(IBl bl)
         {
             this.bl = bl;
         }
-        // GET: api/<VolunteeringController>
+
+        // GET: api/VolunteerDomain/Get
         [HttpGet]
-        public Task<List<BlVolunteerDomainModel>> Get()
+        public async Task<List<BlVolunteerDomainModel>> GetAll()
         {
-            return bl.VolunteerDomains.ReadAll();
+            return await bl.VolunteerDomains.ReadAllAsync();
         }
 
-        // GET api/<VolunteeringController>/5
+        // GET api/VolunteerDomain/Get/5
         [HttpGet("{id}")]
-        public Task<BlVolunteerDomainModel> Get(int id)
+        public async Task<ActionResult<BlVolunteerDomainModel>> Get(int id)
         {
-            return bl.VolunteerDomains.Read(id);
+            var result = await bl.VolunteerDomains.ReadAsync(id);
+            if (result == null)
+                return NotFound();
+            return result;
         }
 
-        // POST api/<VolunteeringController>
+        // POST api/VolunteerDomain/Post
         [HttpPost]
-        public void Post([FromBody] BlVolunteerDomainModel v)
+        public async Task<IActionResult> Post([FromBody] BlVolunteerDomainModel v)
         {
-            bl.VolunteerDomains.Create(v);
+            await bl.VolunteerDomains.CreateAsync(v);
+            return CreatedAtAction(nameof(Get), new { id = v.VolunteerDomainsCode }, v);
         }
 
-        // PUT api/<VolunteeringController>/5
+        // PUT api/VolunteerDomain/Put/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] BlVolunteerDomainModel v)
+        public async Task<IActionResult> Put(int id, [FromBody] BlVolunteerDomainModel v)
         {
-            bl.VolunteerDomains.Update(v);
+            if (id != v.VolunteerDomainsCode)
+                return BadRequest();
 
+            await bl.VolunteerDomains.UpdateAsync(v);
+            return NoContent();
         }
 
-        // DELETE api/<VolunteeringController>/5
+        // DELETE api/VolunteerDomain/Delete/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            bl.VolunteerDomains.Delete(Get(id).Result);
+            var volunteerDomain = await bl.VolunteerDomains.ReadAsync(id);
+            if (volunteerDomain == null)
+                return NotFound();
+
+            await bl.VolunteerDomains.DeleteAsync(volunteerDomain);
+            return NoContent();
         }
     }
 }

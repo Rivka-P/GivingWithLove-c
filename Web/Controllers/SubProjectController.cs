@@ -1,8 +1,8 @@
 ﻿using Bl.BLApi;
 using Bl.BLModels;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Web.Controllers
 {
@@ -10,61 +10,62 @@ namespace Web.Controllers
     [ApiController]
     public class SubProjectController : ControllerBase
     {
-
-        IBl bl;
+        private readonly IBl bl;
         public SubProjectController(IBl bl)
         {
             this.bl = bl;
         }
-        // GET: api/<SubProjectController>
+
+        // GET: api/SubProject
         [HttpGet]
-        public Task<List<BlSubProjectModel>> Get()
+        public async Task<ActionResult<List<BlSubProjectModel>>> GetAll()
         {
-            return bl.SubProject.ReadAll();
+            var list = await bl.SubProject.ReadAllAsync();
+            return Ok(list);
         }
 
-        // GET api/<SubProjectController>/5
+        // GET api/SubProject/5
         [HttpGet("{id}")]
-        public Task<BlSubProjectModel> Get(int id)
+        public async Task<ActionResult<BlSubProjectModel>> Get(int id)
         {
-            return bl.SubProject.Read(id);
-
+            var sp = await bl.SubProject.ReadAsync(id);
+            if (sp == null)
+                return NotFound();
+            return Ok(sp);
         }
 
-        // POST api/<SubProjectController>
+        // POST api/SubProject
         [HttpPost]
-        public bool Post(BlSubProjectModel s)
+        public async Task<ActionResult> Post([FromBody] BlSubProjectModel s)
         {
-            try
-            {
-                bl.SubProject.Create(s);
-                return true;
-            }
-            catch { return false; }
+            if (s == null)
+                return BadRequest();
+
+            await Task.Run(() => bl.SubProject.CreateAsync(s));
+            return CreatedAtAction(nameof(Get), new { id = s.SubProjectCode }, s);
         }
 
-        // PUT api/<SubProjectController>/5
+        // PUT api/SubProject/5
         [HttpPut("{id}")]
-        public bool Put(int id, BlSubProjectModel s)
+        public async Task<ActionResult> Put(int id, [FromBody] BlSubProjectModel s)
         {
-            try
-            {
-                bl.SubProject.Update(s);
-                return true;
-            }
-            catch { return false; }
+            if (s == null || id != s.SubProjectCode)
+                return BadRequest();
+
+            await Task.Run(() => bl.SubProject.UpdateAsync(s));
+            return NoContent();
         }
 
-        // DELETE api/<SubProjectController>/5
+        // DELETE api/SubProject/5
         [HttpDelete("{id}")]
-        public bool Delete(BlSubProjectModel s)
+        public async Task<ActionResult> DeleteAsync(int id)
         {
-            try
-            {
-                bl.SubProject.Delete(s);
-                return true;
-            }
-            catch { return false; }
+            var sp = await bl.SubProject.ReadAsync(id);
+            if (sp == null)
+                return NotFound();
+
+            await Task.Run(() => bl.SubProject.DeleteAsync(sp));
+            return NoContent();
         }
     }
 }

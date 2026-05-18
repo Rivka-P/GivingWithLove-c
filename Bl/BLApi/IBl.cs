@@ -15,7 +15,6 @@ namespace Bl.BLApi
         public BlEichudInterface Eichud { get; }
         public BlSubProjectInterface SubProject { get; }
         public BlPositionInterface Position { get; }
-
         public BlProjectInterface Project { get; }
 
 

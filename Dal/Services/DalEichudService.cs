@@ -4,98 +4,75 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Dal.Services
 {
-    public class DalEichudService:DalEichudInterface
+    public class DalEichudService : DalEichudInterface
     {
         private DbManager dbm;
-        
+
         public DalEichudService(DbManager dbm)
         {
             this.dbm = dbm;
         }
 
-        public void Create(Eichud item)
+        public async Task CreateAsync(Eichud item)
         {
-            dbm.Eichuds.Add(item);
-            dbm.SaveChanges();
+            await dbm.Eichuds.AddAsync(item);
+            await dbm.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            try
+            var item = await dbm.Eichuds.FirstOrDefaultAsync(e => e.EichudCode == id);
+            if (item != null)
             {
-                var item = ReadAll().Result.Find(b => b.EichudCode == id);
-                if (item != null)
-                {
-
-                    dbm.Eichuds.Remove(item);
-                    dbm.SaveChanges();
-                }
+                dbm.Eichuds.Remove(item);
+                await dbm.SaveChangesAsync();
             }
-            catch {Console.WriteLine("the EicudCode do not found");
-                throw new ArgumentNullException("the EicudCode do not found");}
+            else
+            {
+                Console.WriteLine("the EichudCode do not found");
+                throw new ArgumentNullException("the EichudCode do not found");
+            }
         }
 
-        public void Delete(Eichud item)
+        public async Task DeleteAsync(Eichud item)
         {
-            Delete(item.EichudCode);
-         
+            await DeleteAsync(item.EichudCode);
         }
 
-        public async Task<List<Eichud>> Read(Func<Eichud, bool> func)
+        public async Task<List<Eichud>> ReadAsync(Func<Eichud, bool> func)
         {
-            List<Eichud> list = new List<Eichud>();
-
-            foreach (Eichud item in dbm.Eichuds)
-                if (func(item)) 
-                    list.Add(item);
-
-            return list;
+            var all = await dbm.Eichuds.ToListAsync();
+            return all.Where(func).ToList();
         }
 
-        public async Task<Eichud> Read(int id)
+        public async Task<Eichud> ReadAsync(int id)
         {
-            Eichud e = dbm.Eichuds.ToList().Find(x => x.EichudCode == id) ?? throw new ObjectNotFoundException  ();
+            var e = await dbm.Eichuds.FirstOrDefaultAsync(x => x.EichudCode == id)
+                     ?? throw new ObjectNotFoundException();
             return e;
-
         }
 
-
-        //public object Read(Bl.BLModels.BlEichudModel item)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public object Read(Bl.BLModels.BlEichudModel item)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        public async Task<List<Eichud>> ReadAll()
+        public async Task<List<Eichud>> ReadAllAsync()
         {
-            return dbm.Eichuds.ToList();
+            return await dbm.Eichuds.ToListAsync();
         }
 
-
-        public void Update(Eichud item)
+        public async Task UpdateAsync(Eichud item)
         {
-            try
+            var existing = await dbm.Eichuds.FirstOrDefaultAsync(x => x.EichudCode == item.EichudCode);
+            if (existing != null)
             {
-                var i = ReadAll().Result.FindIndex(b => b.EichudCode == item.EichudCode);
-                if (i >= 0)
-                {
-                    dbm.Eichuds.ToList<Eichud>()[i] = item;
-                    dbm.SaveChanges();
-                }
-
+                dbm.Entry(existing).CurrentValues.SetValues(item);
+                await dbm.SaveChangesAsync();
             }
-            catch {
-                Console.WriteLine("EicudCode not found");
-                throw new Exception("EicudCode not found");
+            else
+            {
+                Console.WriteLine("EichudCode not found");
+                throw new Exception("EichudCode not found");
             }
         }
     }

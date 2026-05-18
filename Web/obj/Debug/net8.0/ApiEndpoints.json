@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Web.Controllers.EichudController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Eichud",
     "HttpMethod": "GET",
     "IsController": true,
@@ -96,7 +96,7 @@
   },
   {
     "ContainingType": "Web.Controllers.EichudController",
-    "Method": "Delete",
+    "Method": "DeleteAsync",
     "RelativePath": "api/Eichud/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -122,7 +122,7 @@
   },
   {
     "ContainingType": "Web.Controllers.PositionController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Position",
     "HttpMethod": "GET",
     "IsController": true,
@@ -217,14 +217,14 @@
   },
   {
     "ContainingType": "Web.Controllers.PositionController",
-    "Method": "Delete",
+    "Method": "DeleteAsync",
     "RelativePath": "api/Position/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "value",
         "Type": "Bl.BLModels.BlPositionModel",
         "IsRequired": true
       },
@@ -248,7 +248,7 @@
   },
   {
     "ContainingType": "Web.Controllers.ProjectController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Project",
     "HttpMethod": "GET",
     "IsController": true,
@@ -280,17 +280,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.ProjectController",
@@ -337,52 +327,27 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.ProjectController",
-    "Method": "Delete",
+    "Method": "DeleteAsync",
     "RelativePath": "api/Project/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "s",
-        "Type": "Bl.BLModels.BlProjectModel",
-        "IsRequired": true
-      },
-      {
         "Name": "id",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.SubProjectController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/SubProject",
     "HttpMethod": "GET",
     "IsController": true,
@@ -414,17 +379,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.SubProjectController",
@@ -471,52 +426,27 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.SubProjectController",
-    "Method": "Delete",
+    "Method": "DeleteAsync",
     "RelativePath": "api/SubProject/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "s",
-        "Type": "Bl.BLModels.BlSubProjectModel",
-        "IsRequired": true
-      },
-      {
         "Name": "id",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteerController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Volunteer",
     "HttpMethod": "GET",
     "IsController": true,
@@ -548,17 +478,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteerController",
@@ -605,17 +525,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteerController",
@@ -626,27 +536,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "v",
-        "Type": "Bl.BLModels.BLVolunteerModel",
-        "IsRequired": true
-      },
-      {
         "Name": "id",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteerDomainController",
@@ -662,33 +557,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Web.Controllers.VolunteerDomainController",
-    "Method": "Get",
-    "RelativePath": "api/VolunteerDomain/Get",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Dal.Models.BlVolunteerDomainModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteerDomainController",
@@ -718,6 +587,26 @@
   },
   {
     "ContainingType": "Web.Controllers.VolunteerDomainController",
+    "Method": "GetAll",
+    "RelativePath": "api/VolunteerDomain/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Dal.Models.BlVolunteerDomainModel, Bl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Web.Controllers.VolunteerDomainController",
     "Method": "Post",
     "RelativePath": "api/VolunteerDomain/Post",
     "HttpMethod": "POST",
@@ -730,13 +619,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteerDomainController",
@@ -757,17 +640,11 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Volunteering",
     "HttpMethod": "GET",
     "IsController": true,
@@ -799,13 +676,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
@@ -852,13 +723,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.VolunteeringController",
@@ -874,13 +739,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Web.Controllers.WeatherForecastController",

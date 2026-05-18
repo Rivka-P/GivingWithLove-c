@@ -1,10 +1,9 @@
 ﻿using Bl.BLApi;
 using Bl.BLModels;
-using Dal.Api;
-using Dal.Models;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Web.Controllers
 {
@@ -12,57 +11,89 @@ namespace Web.Controllers
     [ApiController]
     public class VolunteeringController : ControllerBase
     {
-        IBl bl;
+        private readonly IBl _bl;
+
         public VolunteeringController(IBl bl)
         {
-            this.bl = bl;
+            _bl = bl;
         }
-        // GET: api/<VolunteeringController>
+
+        // GET: api/Volunteering
         [HttpGet]
-        public Task<List<BlVolunteeringModel >> Get()
+        public async Task<ActionResult<List<BlVolunteeringModel>>> GetAll()
         {
-            //return bl.Volunteerings.ReadAll();
-          
-                var volunteers = bl.Volunteerings.ReadAll();
-                if (volunteers == null )
-                {
-                    return ObjectNotFoundException();
-                }
-                return volunteers;
-            }
+            var volunteers = await _bl.Volunteerings.ReadAllAsync();
+            if (volunteers == null || volunteers.Count == 0)
+                return NotFound("No volunteering records found.");
 
-        private async Task<List<BlVolunteeringModel>> ObjectNotFoundException()
-        {
-            throw new NotImplementedException();
-        }       
+            return Ok(volunteers);
+        }
 
-        // GET api/<VolunteeringController>/5
+        // GET: api/Volunteering/5
         [HttpGet("{id}")]
-        public Task<BlVolunteeringModel> Get(int id)
+        public async Task<ActionResult<BlVolunteeringModel>> Get(int id)
         {
-            return bl.Volunteerings.Read(id);
+            try
+            {
+                var volunteer = await _bl.Volunteerings.ReadAsync(id);
+                if (volunteer == null)
+                    return NotFound($"Volunteering record with ID {id} not found.");
+
+                return Ok(volunteer);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
-        // POST api/<VolunteeringController>
+        // POST: api/Volunteering
         [HttpPost]
-        public void Post([FromBody] BlVolunteeringModel v)
+        public async Task<ActionResult> Post([FromBody] BlVolunteeringModel v)
         {
-            bl.Volunteerings.Create(v);
+            try
+            {
+                await _bl.Volunteerings.CreateAsync(v);
+                return CreatedAtAction(nameof(Get), new { id = v.VolunteeringCode }, v);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Could not create volunteering record: {ex.Message}");
+            }
         }
 
-        // PUT api/<VolunteeringController>/5
+        // PUT: api/Volunteering/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] BlVolunteeringModel v)
+        public async Task<ActionResult> Put(int id, [FromBody] BlVolunteeringModel v)
         {
-            bl.Volunteerings.Update(v);
-
+            try
+            {
+                await _bl.Volunteerings.UpdateAsync(v);
+                return NoContent(); // 204
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Could not update volunteering record: {ex.Message}");
+            }
         }
 
-        // DELETE api/<VolunteeringController>/5
+        // DELETE: api/Volunteering/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            bl.Volunteerings.Delete(Get(id).Result);
+            try
+            {
+                var volunteer = await _bl.Volunteerings.ReadAsync(id);
+                if (volunteer == null)
+                    return NotFound($"Volunteering record with ID {id} not found.");
+
+                await _bl.Volunteerings.DeleteAsync(volunteer);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Could not delete volunteering record: {ex.Message}");
+            }
         }
     }
 }
