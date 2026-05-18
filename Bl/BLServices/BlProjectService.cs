@@ -2,6 +2,7 @@
 using Bl.BLModels;
 using Dal.Api;
 using Dal.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,19 @@ namespace Bl.BLServices
     public class BlProjectService : BlProjectInterface
     {
         private DalProjectInterface Project;
-        public BlProjectService(IDal dal)
+        private BlSubProjectInterface SubProject;
+        //private BlVolunteerDomainInterface VolunteerDomain;
+
+
+    //    Project project = context.Projects
+    //.Include(p => p.VolunteerDomains)
+    //.FirstOrDefault();
+
+        public BlProjectService(IDal dal, BlSubProjectInterface subProject ,BlVolunteerDomainInterface VolunteerDomains)
         {
             this.Project = dal.Project;
+            this.SubProject = subProject;
+            //this.VolunteerDomain = VolunteerDomains;
         }
 
 
@@ -26,20 +37,36 @@ namespace Bl.BLServices
                 ProjectCode = s.ProjectCode,
                 ProjectName = s.ProjectName,
                 ProjectManagerCode = s.ProjectManagerCode,
-                DomainCode = s.DomainCode
-             
-    };
+                DomainCode = s.DomainCode,
+                InverseDomainCodeNavigation = s.InverseDomainCodeNavigation.Select(x => Convert(x)).ToList(),
+                SubProjects = s.SubProjects.Select(x => ((BlSubProjectService)SubProject).Convert(x)).ToList(),
+                //VolunteerDomains = s.VolunteerDomains
+                //.Select(x => volunteerDomainService.Convert(x))
+                //.ToList()
+                //VolunteerDomains = VolunteerDomainService.Convert(s.VolunteerDomains)
+              
+                //VolunteerDomain = s.VolunteerDomains.Select(x=>((BlVolunteerDomainService)VolunteerDomains).Convert(x)).ToList()
+
+            };
         }
         private BlProjectModel Convert(Project s)
         {
-            return new BlProjectModel()
+            BlProjectModel blpm = new BlProjectModel()
             {
 
                 ProjectCode = s.ProjectCode,
                 ProjectName = s.ProjectName,
                 ProjectManagerCode = s.ProjectManagerCode,
-                DomainCode = s.DomainCode                
+                DomainCode = s.DomainCode ,
+                Volunteers= s.  BlVolunteerDomainService.Convert ( s.VolunteerDomain.ToList()),
+                InverseDomainCodeNavigation = s.InverseDomainCodeNavigation.Select(x => Convert(x)).ToList(),
+                SubProjects =s.SubProjects.Select(x=> ((BlSubProjectService)SubProject).Convert(x)).ToList()
             };
+            //if( s.InverseDomainCodeNavigation.Count>0 )
+            //{
+            //    blpm.InverseDomainCodeNavigation = s.InverseDomainCodeNavigation.Select(x => Convert(x)).ToList();
+            //}
+            return blpm;
         }
         private List<BlProjectModel> Convert(List<Project> c)
         {

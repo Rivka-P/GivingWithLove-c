@@ -1618,6 +1618,27 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "inverseDomainCodeNavigation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlProjectModel"
+            },
+            "nullable": true
+          },
+          "subProjects": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlSubProjectModel"
+            },
+            "nullable": true
+          },
+          "volunteerDomains": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlVolunteerDomainModel"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1664,6 +1685,9 @@
           "projectCode": {
             "type": "integer",
             "format": "int32"
+          },
+          "projectCodeNavigation": {
+            "$ref": "#/components/schemas/Project"
           }
         },
         "additionalProperties": false
@@ -1703,6 +1727,323 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Eichud": {
+        "type": "object",
+        "properties": {
+          "eichudCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tohar": {
+            "type": "string",
+            "nullable": true
+          },
+          "familyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ending": {
+            "type": "string",
+            "nullable": true
+          },
+          "fathersName": {
+            "type": "string",
+            "nullable": true
+          },
+          "shtibel": {
+            "type": "string",
+            "nullable": true
+          },
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "house": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "housePhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "cellPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "shver": {
+            "type": "string",
+            "nullable": true
+          },
+          "volunteer": {
+            "$ref": "#/components/schemas/Volunteer"
+          },
+          "volunteerings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Volunteering"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Position": {
+        "type": "object",
+        "properties": {
+          "positionCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "positionName": {
+            "type": "string",
+            "nullable": true
+          },
+          "volunteers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Volunteer"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Project": {
+        "type": "object",
+        "properties": {
+          "projectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectName": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectManagerCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "domainCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "domainCodeNavigation": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "inverseDomainCodeNavigation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Project"
+            },
+            "nullable": true
+          },
+          "projectManagerCodeNavigation": {
+            "$ref": "#/components/schemas/Volunteer"
+          },
+          "subProjects": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubProject"
+            },
+            "nullable": true
+          },
+          "volunteerDomain": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VolunteerDomain"
+            },
+            "nullable": true
+          },
+          "volunteerings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Volunteering"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubProject": {
+        "type": "object",
+        "properties": {
+          "subProjectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subProjectName": {
+            "type": "string",
+            "nullable": true
+          },
+          "estimatedTime": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "estimatedCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "projectCodeNavigation": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "volunteerings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Volunteering"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Volunteer": {
+        "type": "object",
+        "properties": {
+          "volunteerCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "positionCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "positionCodeNavigation": {
+            "$ref": "#/components/schemas/Position"
+          },
+          "projects": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Project"
+            },
+            "nullable": true
+          },
+          "volunteerCodeNavigation": {
+            "$ref": "#/components/schemas/Eichud"
+          },
+          "volunteerDomains": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VolunteerDomain"
+            },
+            "nullable": true
+          },
+          "volunteeringMatcherCodeNavigations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Volunteering"
+            },
+            "nullable": true
+          },
+          "volunteeringVolunteerCodeNavigations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Volunteering"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VolunteerDomain": {
+        "type": "object",
+        "properties": {
+          "volunteerDomainsCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "volunteerCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectCodeNavigation": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "volunteerCodeNavigation": {
+            "$ref": "#/components/schemas/Volunteer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Volunteering": {
+        "type": "object",
+        "properties": {
+          "volunteeringCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dateOfVolunteering": {
+            "type": "string",
+            "format": "date"
+          },
+          "volunteerCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poorManCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "matcherCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "projectCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "subProjectCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "matcherCodeNavigation": {
+            "$ref": "#/components/schemas/Volunteer"
+          },
+          "poorManCodeNavigation": {
+            "$ref": "#/components/schemas/Eichud"
+          },
+          "projectCodeNavigation": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "subProjectCodeNavigation": {
+            "$ref": "#/components/schemas/SubProject"
+          },
+          "volunteerCodeNavigation": {
+            "$ref": "#/components/schemas/Volunteer"
           }
         },
         "additionalProperties": false

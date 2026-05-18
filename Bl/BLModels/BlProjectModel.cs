@@ -19,13 +19,13 @@ namespace Bl.BLModels
 
         //public virtual Project DomainCodeNavigation { get; set; } = null!;
 
-        //public virtual ICollection<Project> InverseDomainCodeNavigation { get; set; } = new List<Project>();
+        public List<BlProjectModel> InverseDomainCodeNavigation { get; set; } = new List<BlProjectModel>();
 
         //public virtual Volunteer? ProjectManagerCodeNavigation { get; set; }
 
-        //public virtual ICollection<SubProject> SubProjects { get; set; } = new List<SubProject>();
+        public  List<BlSubProjectModel> SubProjects { get; set; } = new List<BlSubProjectModel>();
 
-        //public virtual ICollection<VolunteerDomain> VolunteerDomains { get; set; } = new List<VolunteerDomain>();
+        public List<BLVolunteerModel> Volunteers { get; set; } = new List<BLVolunteerModel>();
 
         //public virtual ICollection<Volunteering> Volunteerings { get; set; } = new List<Volunteering>();
     }

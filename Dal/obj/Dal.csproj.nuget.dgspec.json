@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj": {}
+    "D:\\givingWithLove\\New folder (3)\\GivingWithLove-c\\Dal\\Dal.csproj": {}
   },
   "projects": {
-    "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj": {
+    "D:\\givingWithLove\\New folder (3)\\GivingWithLove-c\\Dal\\Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj",
+        "projectUniqueName": "D:\\givingWithLove\\New folder (3)\\GivingWithLove-c\\Dal\\Dal.csproj",
         "projectName": "Dal",
-        "projectPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj",
-        "packagesPath": "C:\\Users\\פינטר רבקי\\.nuget\\packages\\",
-        "outputPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\obj\\",
+        "projectPath": "D:\\givingWithLove\\New folder (3)\\GivingWithLove-c\\Dal\\Dal.csproj",
+        "packagesPath": "C:\\Users\\גולדמן אתי\\.nuget\\packages\\",
+        "outputPath": "D:\\givingWithLove\\New folder (3)\\GivingWithLove-c\\Dal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\פינטר רבקי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\גולדמן אתי\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

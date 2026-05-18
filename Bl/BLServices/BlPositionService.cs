@@ -58,7 +58,7 @@ namespace Bl.BLServices
         {
             return convert(dal.Read(id).Result);
         }
-
+        
         public async Task<List<BlPositionModel>> Read(Func<BlPositionModel, bool> func)
         {
             List<BlPositionModel> list =

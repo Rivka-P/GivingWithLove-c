@@ -14,3 +14,19 @@ D:\RivkyPinter\GWL_Project\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.dll
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Bl\obj\Debug\net8.0\refint\Bl.dll
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.pdb
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Bl\obj\Debug\net8.0\ref\Bl.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.deps.json
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\bin\Debug\net8.0\Bl.pdb
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\bin\Debug\net8.0\Dal.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\bin\Debug\net8.0\Dal.pdb
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.csproj.Up2Date
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\refint\Bl.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\Bl.pdb
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Bl\obj\Debug\net8.0\ref\Bl.dll

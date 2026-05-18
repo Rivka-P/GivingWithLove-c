@@ -33,7 +33,7 @@ public partial class DbManager : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         //Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\GWLData.mdf;Integrated Security = True
-        => optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\GWLData.mdf;Integrated Security=True;Connect Timeout=30\n");
+        => optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\givingWithLove\\New folder (3)\\GivingWithLove-c\\Dal\\GWLData.mdf;Integrated Security=True;Connect Timeout=30\n");
         //=> optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\givingWithLove\\GivingWithLove-c\\Dal\\GWLData.mdf;Integrated Security=True;Connect Timeout=30");
     //Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename="F:\תיקייה כללית חדש\שנה א תשפה\תלמידות\#PROJECTS\הפרויקט!!!!!!!!!!!!!!!!\GivingWithLove\Dal\GWLData.mdf";Integrated Security = True
         //=> optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\אדלר יפי\\C#\\GivingWithLove-c\\Dal\\GWLData.mdf\";Integrated Security = True;Connect Timeout=30\n");
@@ -145,7 +145,7 @@ public partial class DbManager : DbContext
 
             entity.Property(e => e.VolunteerDomainsCode).ValueGeneratedNever();
 
-            entity.HasOne(d => d.ProjectCodeNavigation).WithMany(p => p.VolunteerDomains)
+            entity.HasOne(d => d.ProjectCodeNavigation).WithMany(p => p.VolunteerDomain)
                 .HasForeignKey(d => d.ProjectCode)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Volunteer__Proje__47DBAE45");

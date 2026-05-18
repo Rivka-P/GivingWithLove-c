@@ -84,11 +84,13 @@ namespace Bl.BLServices
 
         public async Task<BlEichudModel> Read(int id)
         {
-            try { return convert(dal.Read(id).Result); }
-            catch (ObjectNotFoundException e)
-            {
-                return null;
-            }
+            //try { 
+                return convert(dal.Read(id).Result);
+            //}
+            //catch (ObjectNotFoundException e)
+            //{
+            //    return null;
+            //}
             //return convert(dal.Read(convert(item).Result));
         }
 
