@@ -1,8 +1,8 @@
 ﻿using Bl.BLApi;
 using Bl.BLModels;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Web.Controllers
 {
@@ -15,45 +15,48 @@ namespace Web.Controllers
         {
             this.bl = bl;
         }
+
         // GET: api/<PositionController>
         [HttpGet]
-
-        public Task<List<BlPositionModel>> Get()
+        public async Task<List<BlPositionModel>> GetAll()
         {
-            return bl.Position.ReadAll();
+            return await bl.Position.ReadAllAsync();
         }
-        
+
         // GET api/<PositionController>/5
         [HttpGet("{id}")]
-        public Task<BlPositionModel> Get(int id)
+        public async Task<BlPositionModel> Get(int id)
         {
-            return bl.Position.Read(id);
+            return await bl.Position.ReadAsync(id);
         }
 
         // POST api/<PositionController>
         [HttpPost]
-        public void Post([FromBody] BlPositionModel value)
+        public async Task Post([FromBody] BlPositionModel value)
         {
-            bl.Position.Create(value);
+            await bl.Position.CreateAsync(value);
         }
-        
+
         // PUT api/<PositionController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] BlPositionModel value)
+        public async Task Put(int id, [FromBody] BlPositionModel value)
         {
-            bl.Position.Update(value);
+            await bl.Position.UpdateAsync(value);
         }
-        
+
         // DELETE api/<PositionController>/5
         [HttpDelete("{id}")]
-        public bool Delete(BlPositionModel id)
+        public async Task<bool> DeleteAsync([FromBody] BlPositionModel value)
         {
             try
             {
-                bl.Position.Delete(id);
+                await bl.Position.DeleteAsync(value);
                 return true;
             }
-            catch { return false; }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

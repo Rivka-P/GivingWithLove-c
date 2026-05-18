@@ -37,7 +37,7 @@ public partial class DbManager : DbContext
         //optionsBuilder.UseSqlServer(" Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\אדלר יפי\\C#\\GivingWithLove-c\\Dal\\GWLData.mdf\";Integrated Security = True;Connect Timeout=30\n");
 
     optionsBuilder.UseSqlServer(
-    "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\אדלר יפי\\C#\\GivingWithLove-c\\Dal\\GWLData.mdf;Integrated Security=True;Connect Timeout=30"
+    "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\GWLData.mdf;Integrated Security=True"
 );
     protected override void OnModelCreating(ModelBuilder modelBuilder)
 

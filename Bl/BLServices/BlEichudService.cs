@@ -5,7 +5,6 @@ using Dal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl.BLServices
@@ -17,9 +16,10 @@ namespace Bl.BLServices
         {
             this.dal = dal.Eichud;
         }
-        public  BlEichudModel convert(Eichud eichud)
+        public BlEichudModel convert(Eichud eichud)
         {
-            return new BlEichudModel(){
+            return new BlEichudModel()
+            {
                 EichudCode = eichud.EichudCode,
                 Tohar = eichud.Tohar,
                 FamilyName = eichud.FamilyName,
@@ -36,6 +36,7 @@ namespace Bl.BLServices
                 Shver = eichud.Shver
             };
         }
+
         public Eichud convert(BlEichudModel eichud)
         {
             return new Eichud()
@@ -56,7 +57,8 @@ namespace Bl.BLServices
                 Shver = eichud.Shver
             };
         }
-        private List<BlEichudModel> convert(List<Eichud> v)
+
+        public List<BlEichudModel> convert(List<Eichud> v)
         {
             List<BlEichudModel> list = new List<BlEichudModel>();
             foreach (var item in v)
@@ -65,45 +67,45 @@ namespace Bl.BLServices
             }
             return list;
         }
-        public void Create(BlEichudModel item)
+
+        public async Task CreateAsync(BlEichudModel item)
         {
-            dal.Create(convert(item));
+            await dal.CreateAsync(convert(item));
         }
 
-        public void Delete(BlEichudModel item)
+        public async Task DeleteAsync(BlEichudModel item)
         {
-            dal.Delete(convert(item));
+            await dal.DeleteAsync(convert(item));
         }
 
-        public async Task<List<BlEichudModel>> Read(Func<BlEichudModel, bool> func)
+        public async Task<List<BlEichudModel>> ReadAsync(Func<BlEichudModel, bool> func)
         {
-
-            List<BlEichudModel> list = convert(dal.Read((Func<Eichud, bool>)func).Result);
-            return list;
+            var all = await dal.ReadAsync((Func<Eichud, bool>)(e => func(convert(e))));
+            return convert(all);
         }
 
-        public async Task<BlEichudModel> Read(int id)
+        public async Task<BlEichudModel> ReadAsync(int id)
         {
-            try { return convert(dal.Read(id).Result); }
-            catch (ObjectNotFoundException e)
+            try
+            {
+                var item = await dal.ReadAsync(id);
+                return convert(item);
+            }
+            catch (ObjectNotFoundException)
             {
                 return null;
             }
-            //return convert(dal.Read(convert(item).Result));
         }
 
-        public async Task<List<BlEichudModel>> ReadAll()
+        public async Task<List<BlEichudModel>> ReadAllAsync()
         {
-            List<BlEichudModel> list = new List<BlEichudModel>();
-            dal.ReadAll().Result.ForEach(item => { list.Add(convert(item)); });
-            return list;
+            var all = await dal.ReadAllAsync();
+            return convert(all);
         }
 
-        public void Update(BlEichudModel item)
+        public async Task UpdateAsync(BlEichudModel item)
         {
-            dal.Update(convert(item));
+            await dal.UpdateAsync(convert(item));
         }
-
-       
     }
 }

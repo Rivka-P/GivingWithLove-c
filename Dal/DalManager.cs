@@ -1,6 +1,7 @@
 ﻿using Dal.Api;
 using Dal.Models;
 using Dal.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System;
@@ -38,8 +39,9 @@ namespace Dal
 
 
             ServiceCollection services = new ServiceCollection();
-
-            services.AddSingleton<DbManager>();
+            services.AddDbContext<DbManager>();// options =>
+   // options.UseSqlServer(connectionString));
+            //services.AddSingleton<DbManager>();
             services.AddSingleton<DalVolunteeringInterface, DalVolunteeringService>();
             services.AddSingleton<DalVolunteerInterface, DalVolunteerService>();
             services.AddSingleton<DalEichudInterface, DalEichudService>();

@@ -5,7 +5,6 @@ using Dal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl.BLServices
@@ -20,7 +19,8 @@ namespace Bl.BLServices
 
         private SubProject Convert(BlSubProjectModel s)
         {
-            return new SubProject() {
+            return new SubProject()
+            {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,
@@ -28,9 +28,11 @@ namespace Bl.BLServices
                 EstimatedCost = s.EstimatedCost
             };
         }
+
         private BlSubProjectModel Convert(SubProject s)
         {
-            return new BlSubProjectModel() {
+            return new BlSubProjectModel()
+            {
                 SubProjectCode = s.SubProjectCode,
                 ProjectCode = s.ProjectCode,
                 SubProjectName = s.SubProjectName,
@@ -38,54 +40,50 @@ namespace Bl.BLServices
                 EstimatedCost = s.EstimatedCost
             };
         }
+
         private List<BlSubProjectModel> Convert(List<SubProject> c)
         {
-            List<BlSubProjectModel> list = new List<BlSubProjectModel>();
-            foreach (var item in c)
+            return c.Select(Convert).ToList();
+        }
+
+        public async Task DeleteAsync(BlSubProjectModel item)
+        {
+            SubProject.DeleteAsync(Convert(item));
+        }
+
+        public async Task CreateAsync(BlSubProjectModel item)
+        {
+            SubProject.CreateAsync(Convert(item));
+        }
+
+        public async Task UpdateAsync(BlSubProjectModel item)
+        {
+            SubProject.UpdateAsync(Convert(item));
+        }
+
+        public async Task<BlSubProjectModel> ReadAsync(int id)
+        {
+            try
             {
-                list.Add(Convert(item));
+                var data = await SubProject.ReadAsync(id);
+                return Convert(data);
             }
-            return list;
-        }
-
-
-        public void Delete(BlSubProjectModel item)
-        {
-            SubProject.Delete(Convert(item));
-        }
-
-        public void Create(BlSubProjectModel item)
-        {
-            SubProject.Create(Convert(item));
-        }
-
-        public void Update(BlSubProjectModel item)
-        {
-            SubProject.Update(Convert(item));
-        }
-
-        public async Task<BlSubProjectModel> Read(int id)
-        {
-            try { return   Convert(await SubProject.Read(id)); }
-            catch (ObjectNotFoundException e)
+            catch (ObjectNotFoundException)
             {
                 return null;
             }
         }
 
-        public async Task<List<BlSubProjectModel>> ReadAll()
+        public async Task<List<BlSubProjectModel>> ReadAllAsync()
         {
-            List<BlSubProjectModel> list = new List<BlSubProjectModel>();
-
-            SubProject.ReadAll().Result.ForEach(item => { list.Add(Convert(item)); });
-
-            return list;
+            var data = await SubProject.ReadAllAsync();
+            return Convert(data);
         }
 
-        public async Task<List<BlSubProjectModel>> Read(Func<BlSubProjectModel, bool> func)
+        public async Task<List<BlSubProjectModel>> ReadAsync(Func<BlSubProjectModel, bool> func)
         {
-            List<BlSubProjectModel> list = Convert(SubProject.Read((Func<SubProject, bool>)func).Result);
-            return list;
+            var data = await SubProject.ReadAllAsync(); // במקום להשתמש ב-Result
+            return Convert(data).Where(func).ToList();
         }
     }
 }

@@ -4,87 +4,76 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+
 namespace Dal.Services
 {
     public class DalVolunteerDomainService : DalVolunteerDomainInterface
     {
-        DbManager mydb;
+        private readonly DbManager mydb;
+
         public DalVolunteerDomainService(DbManager mydb)
         {
             this.mydb = mydb;
         }
 
-        public void Create(VolunteerDomain volunteerDomain)
+        public async Task CreateAsync(VolunteerDomain volunteerDomain)
         {
             if (volunteerDomain == null)
-                throw new ArgumentNullException("volunteerDomain is null");
-            else
-                try
-                {
-                    mydb.VolunteerDomains.Add(volunteerDomain);
-                    try {mydb.SaveChanges();}
-                    catch(Exception ex)
-                    {
-                        mydb.VolunteerDomains.Remove(volunteerDomain);
-                        throw new Exception(ex.Message);
-                    }
-                }
-                catch(Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
+                throw new ArgumentNullException(nameof(volunteerDomain));
+
+            await mydb.VolunteerDomains.AddAsync(volunteerDomain);
+            await mydb.SaveChangesAsync();
         }
 
-       
-        public void Delete(VolunteerDomain volunteerDomain)
+        public async Task DeleteAsync(VolunteerDomain volunteerDomain)
         {
             if (volunteerDomain == null)
-                throw new ArgumentNullException("item");
+                throw new ArgumentNullException(nameof(volunteerDomain));
+
             mydb.VolunteerDomains.Remove(volunteerDomain);
-            mydb.SaveChanges();
+            await mydb.SaveChangesAsync();
         }
 
-       public async Task<List<VolunteerDomain>> Read(Func<VolunteerDomain, bool> func)
+        public async Task<VolunteerDomain> ReadAsync(int id)
         {
-            List<VolunteerDomain> list = new();
-            foreach (VolunteerDomain item in mydb.VolunteerDomains)
-                if (func(item))
-                    list.Add(item);
-              return list;
-        }
+            var vm = await mydb.VolunteerDomains
+                                .FirstOrDefaultAsync(v => v.VolunteerDomainsCode == id);
 
-        public async Task<VolunteerDomain> Read(int id)
-        {
-            
-             VolunteerDomain vm =  mydb.VolunteerDomains.ToList().Find(v => v.VolunteerCode == id)?? throw new ObjectNotFoundException();
+            if (vm == null)
+                throw new ObjectNotFoundException();
+
             return vm;
         }
-        public async Task<List<VolunteerDomain>> ReadAll()
+
+        public async Task<List<VolunteerDomain>> ReadAllAsync()
         {
-            return mydb.VolunteerDomains.ToList();
+            return await mydb.VolunteerDomains.ToListAsync();
         }
 
-        
-
-        public void Update(VolunteerDomain volunteerDomain)
+        public async Task<List<VolunteerDomain>> ReadAsync(Func<VolunteerDomain, bool> func)
         {
-            try
-            {
-                var i = ReadAll().Result.FindIndex(v => v.VolunteerDomainsCode == volunteerDomain.VolunteerDomainsCode);
-                if (i >= 0)
-                {
-                    mydb.VolunteerDomains.ToList<VolunteerDomain>()[i] = volunteerDomain;
-                   mydb.SaveChanges();
-                }
-
-            }
-            catch { Console.WriteLine("VolunteerDomain not found"); }
-           
+            // לצערי EF לא תומך ב־Func סינכרוני עם IQueryable, אז צריך להשתמש ב־ToListAsync()
+            var list = await mydb.VolunteerDomains.ToListAsync();
+            return list.Where(func).ToList();
         }
 
-       
+        public async Task UpdateAsync(VolunteerDomain volunteerDomain)
+        {
+            if (volunteerDomain == null)
+                throw new ArgumentNullException(nameof(volunteerDomain));
+
+            var existing = await mydb.VolunteerDomains
+                                     .FirstOrDefaultAsync(v => v.VolunteerDomainsCode == volunteerDomain.VolunteerDomainsCode);
+
+            if (existing == null)
+                throw new ObjectNotFoundException();
+
+            // עדכון השדות
+            existing.VolunteerCode = volunteerDomain.VolunteerCode;
+            existing.ProjectCode = volunteerDomain.ProjectCode;
+
+            await mydb.SaveChangesAsync();
+        }
     }
 }
-  

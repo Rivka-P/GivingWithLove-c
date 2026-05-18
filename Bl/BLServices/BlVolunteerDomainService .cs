@@ -1,91 +1,62 @@
 ﻿using Bl.BLModels;
 using Dal.Api;
 using Dal.Models;
+using Bl.BLApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl.BLServices
 {
-    public class BlVolunteerDomainService:BlVolunteerDomainInterface
+    public class BlVolunteerDomainService : BlVolunteerDomainInterface
     {
-        DalVolunteerDomainInterface dal;
+        private readonly DalVolunteerDomainInterface dal;
+
         public BlVolunteerDomainService(IDal dal)
         {
             this.dal = dal.VolunteerDomains;
         }
-        public BlVolunteerDomainModel Convert(VolunteerDomain v)
+
+        public BlVolunteerDomainModel Convert(VolunteerDomain v) => new BlVolunteerDomainModel
         {
-            return new BlVolunteerDomainModel() {
+            VolunteerDomainsCode = v.VolunteerDomainsCode,
+            VolunteerCode = v.VolunteerCode,
+            ProjectCode = v.ProjectCode
+        };
 
-
-             VolunteerDomainsCode=v.VolunteerDomainsCode,
-
-             VolunteerCode=v.VolunteerCode,
-
-             ProjectCode=v.ProjectCode
-    };
-        }
-        public List<BlVolunteerDomainModel> Convert(List<VolunteerDomain> v)
+        public VolunteerDomain Convert(BlVolunteerDomainModel v) => new VolunteerDomain
         {
-            List<BlVolunteerDomainModel> list = new List<BlVolunteerDomainModel>();
-            foreach (var item in v)
-            {
-                list.Add(Convert(item));
-            }
-            return list;
-        }
-        public VolunteerDomain Convert(BlVolunteerDomainModel v)
+            VolunteerDomainsCode = v.VolunteerDomainsCode,
+            VolunteerCode = v.VolunteerCode,
+            ProjectCode = v.ProjectCode
+        };
+
+        public List<BlVolunteerDomainModel> Convert(List<VolunteerDomain> list) =>
+            list.Select(Convert).ToList();
+
+        public async Task CreateAsync(BlVolunteerDomainModel item) => dal.CreateAsync(Convert(item));
+
+        public async Task DeleteAsync(BlVolunteerDomainModel item) => dal.DeleteAsync(Convert(item));
+
+        public async Task UpdateAsync(BlVolunteerDomainModel item) => dal.UpdateAsync(Convert(item));
+
+        public async Task<BlVolunteerDomainModel> ReadAsync(int id)
         {
-            return new VolunteerDomain() {
-                VolunteerDomainsCode = v.VolunteerDomainsCode,
-
-                VolunteerCode = v.VolunteerCode,
-
-                ProjectCode = v.ProjectCode
-            };
+            var entity = await dal.ReadAsync(id);
+            return entity == null ? null : Convert(entity);
         }
 
-        public void Create(BlVolunteerDomainModel item)
+        public async Task<List<BlVolunteerDomainModel>> ReadAllAsync()
         {
-            dal.Create(Convert(item));
+            var entities = await dal.ReadAllAsync();
+            return Convert(entities);
         }
 
-        public void Delete(BlVolunteerDomainModel item)
+        public async Task<List<BlVolunteerDomainModel>> ReadAsync(Func<BlVolunteerDomainModel, bool> func)
         {
-            dal.Delete(Convert(item));
+            var entities = await dal.ReadAsync(v => func(Convert(v)));
+            return Convert(entities);
         }
-
-
-        public async Task<List<BlVolunteerDomainModel>> ReadAll()
-        {
-            List<BlVolunteerDomainModel> list = new List<BlVolunteerDomainModel>();
-
-            dal.ReadAll().Result.ForEach(item => { list.Add(Convert(item)); });
-
-            return list;
-        }
-
-        public void Update(BlVolunteerDomainModel item)
-        {
-            dal.Update(Convert(item));
-
-        }
-        public async Task<List<BlVolunteerDomainModel>> Read(Func<BlVolunteerDomainModel, bool> func)
-        {
-            List<BlVolunteerDomainModel> list = Convert(dal.Read((Func<VolunteerDomain, bool>)func).Result);
-            return list;
-
-        }
-
-        public async Task<BlVolunteerDomainModel> Read(int vl)
-        {
-           return Convert(dal.Read(vl).Result);
-        }
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     }
 }
-

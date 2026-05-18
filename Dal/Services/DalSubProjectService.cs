@@ -1,9 +1,9 @@
 ﻿using Dal.Api;
 using Dal.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Dal.Services
@@ -16,61 +16,59 @@ namespace Dal.Services
         {
             db = dbm;
         }
-        public void Create(SubProject item)
+
+        public async Task CreateAsync(SubProject item)
         {
-            db.SubProjects.Add(item);
-           db.SaveChanges();
+            if (item == null) throw new ArgumentNullException(nameof(item));
+            await db.SubProjects.AddAsync(item);
+            await db.SaveChangesAsync();
         }
 
-        public void Delete(SubProject item)
+        public async Task DeleteAsync(SubProject item)
         {
-            if (item == null)
-                throw new ArgumentNullException("item");
-            // שאילתא ששולפת את הפריט ואז לעשות רימוב
+            if (item == null) throw new ArgumentNullException(nameof(item));
 
-            db.SubProjects.Remove
-                (db.SubProjects.Where(x => x.SubProjectCode == item.SubProjectCode).FirstOrDefault()
-                            ?? throw new Exception("לא נמצא הפריט למחיקה"));
-            db.SaveChanges();
+            var entity = await db.SubProjects.FirstOrDefaultAsync(x => x.SubProjectCode == item.SubProjectCode);
+            if (entity == null) throw new Exception("לא נמצא הפריט למחיקה");
+
+            db.SubProjects.Remove(entity);
+            await db.SaveChangesAsync();
         }
 
-        public async Task<SubProject> Read(int id)
+        public async Task<SubProject> ReadAsync(int id)
         {
-
-            SubProject sp = db.SubProjects.ToList().Find(v => v.SubProjectCode == id) ?? throw new ObjectNotFoundException();
-            return sp;
-
+            var sp = await db.SubProjects.FirstOrDefaultAsync(v => v.SubProjectCode == id);
+            return sp ?? throw new ObjectNotFoundException();
         }
 
-     
-
-        public async Task<List<SubProject>> Read(Func<SubProject, bool> func)
+        public async Task<List<SubProject>> ReadAsync(Func<SubProject, bool> func)
         {
-           
-            List<SubProject> list = new List<SubProject>();
-            foreach (SubProject item in db.SubProjects)
-                if (func(item))
-                    list.Add(item);
-            return list;           
+            // לא ניתן להריץ LINQ עם Func באופן אסינכרוני על DBSet
+            var all = await db.SubProjects.ToListAsync();
+            return all.Where(func).ToList();
         }
 
-        public async Task<List<SubProject>> ReadAll() => db.SubProjects.ToList();
-
-        public void Update(SubProject item)
+        public async Task<List<SubProject>> ReadAllAsync()
         {
-            try
+            return await db.SubProjects.ToListAsync();
+        }
+
+        public async Task UpdateAsync(SubProject item)
+        {
+            var existing = await db.SubProjects.FirstOrDefaultAsync(v => v.SubProjectCode == item.SubProjectCode);
+            if (existing == null)
             {
-                var i = ReadAll().Result.FindIndex(v => v.SubProjectCode == item.SubProjectCode);
-                if (i >= 0)
-                {
-                    db.SubProjects.ToList<SubProject>()[i] = item;
-                    db.SaveChanges();
-                }
-
+                Console.WriteLine("SubProject not found");
+                throw new Exception("SubProject not found");
             }
-            catch { Console.WriteLine("SubProject not found"); }
 
+            // עדכון השדות
+            existing.ProjectCode = item.ProjectCode;
+            existing.SubProjectName = item.SubProjectName;
+            existing.EstimatedTime = item.EstimatedTime;
+            existing.EstimatedCost = item.EstimatedCost;
+
+            await db.SaveChangesAsync();
         }
-        
     }
 }

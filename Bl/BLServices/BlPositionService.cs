@@ -5,93 +5,67 @@ using Dal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl.BLServices
 {
     public class BlPositionService : BlPositionInterface
     {
-
         DalPositionInterface dal;
         public BlPositionService(IDal dal)
         {
             this.dal = dal.Position;
         }
-        private BlPositionModel convert(Position p)
+
+        private BlPositionModel convert(Position p) => new BlPositionModel()
         {
-            return new BlPositionModel()
-            {
-                positionCode = p.positionCode,
-                positionName = p.positionName
-            };
-        }
-        private Position convert(BlPositionModel p)
+            positionCode = p.positionCode,
+            positionName = p.positionName
+        };
+
+        private Position convert(BlPositionModel p) => new Position()
         {
-            return new Position()
-            {
-                positionCode = p.positionCode,
-                positionName = p.positionName
-            };
-        }
-        private List<BlPositionModel> convert(List<Position> p)
+            positionCode = p.positionCode,
+            positionName = p.positionName
+        };
+
+        private List<BlPositionModel> convert(List<Position> p) =>
+            p.Select(convert).ToList();
+
+        public async Task CreateAsync(BlPositionModel item)
         {
-            List<BlPositionModel> list = new List<BlPositionModel>();
-            foreach (var item in p)
-            {
-                list.Add(convert(item));
-            }
-            return list;
+            await dal.CreateAsync(convert(item));
         }
 
-        public void Create(BlPositionModel item)
+        public async Task DeleteAsync(BlPositionModel item)
         {
-            dal.Create(convert(item));
+            await dal.DeleteAsync(convert(item));
         }
 
-        public void Delete(BlPositionModel item)
+        public async Task<BlPositionModel> ReadAsync(int id)
         {
-            dal.Delete(convert(item));
-        }
-        public async Task<BlPositionModel> Read(int id)
-        {
-            var data = await dal.Read(id);
+            var data = await dal.ReadAsync(id);
             return convert(data);
         }
-        //public async Task<BlPositionModel> Read(int id)
-        //{
-        //    return convert(dal.Read(id).Result);
-        //}
-        public async Task<List<BlPositionModel>> Read(Func<BlPositionModel, bool> func)
+
+        public async Task<List<BlPositionModel>> ReadAsync(Func<BlPositionModel, bool> func)
         {
-            var data = await dal.ReadAll();
+            var data = await dal.ReadAllAsync();
             return data
                 .Select(convert)
                 .Where(func)
                 .ToList();
         }
-        //public async Task<List<BlPositionModel>> Read(Func<BlPositionModel, bool> func)
-        //{
-        //    List<BlPositionModel> list =
-        //        convert(dal.Read((Func<Position, bool>)func).Result);
-        //        return list;
-        //}
-        public async Task<List<BlPositionModel>> ReadAll()
-        {
-            var data = await dal.ReadAll();
-            return data.Select(item => convert(item)).ToList();
-        }
-        //public async Task<List<BlPositionModel>> ReadAll()
-        //{
-        //    List<BlPositionModel> list = new List<BlPositionModel>();
-        //    dal.ReadAll().Result.ForEach(item => { list.Add(convert(item)); });
-        //    //convert(dal.ReadAll().Result);
-        //    return list;
-        //}
 
-        public void Update(BlPositionModel item)
+        public async Task<List<BlPositionModel>> ReadAllAsync()
         {
-            dal.Update(convert(item));
+            var data = await dal.ReadAllAsync();
+            return convert(data);
+        }
+
+        public async Task UpdateAsync(BlPositionModel item)
+        {
+            await dal.UpdateAsync(convert(item));
         }
     }
 }

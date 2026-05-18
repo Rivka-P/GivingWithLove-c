@@ -1,9 +1,9 @@
 ﻿using Dal.Api;
 using Dal.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Dal.Services
@@ -16,102 +16,63 @@ namespace Dal.Services
         {
             db = dbm;
         }
-        public void Create(Project item)
+
+        public async Task CreateAsync(Project item)
         {
             db.Projects.Add(item);
-            db.SaveChanges();
+            await db.SaveChangesAsync();
         }
 
-        public void Delete(Project item)
+        public async Task DeleteAsync(Project item)
         {
             if (item == null)
                 throw new ArgumentNullException("item");
-            // שאילתא ששולפת את הפריט ואז לעשות רימוב
 
-            db.Projects.Remove
-                (db.Projects.Where(x => x.ProjectCode == item.ProjectCode).FirstOrDefault()
-                            ?? throw new Exception("לא נמצא הפריט למחיקה"));
-            db.SaveChanges();
+            var project = await db.Projects
+                .FirstOrDefaultAsync(x => x.ProjectCode == item.ProjectCode);
+
+            if (project == null)
+                throw new Exception("לא נמצא הפריט למחיקה");
+
+            db.Projects.Remove(project);
+            await db.SaveChangesAsync();
         }
 
-        public async Task<Project> Read(int id)
+        public async Task<Project> ReadAsync(int id)
         {
-            Project p = db.Projects.ToList().Find(v => v.ProjectCode == id) ?? throw new ObjectNotFoundException();
-            return p;
+            var project = await db.Projects
+                .FirstOrDefaultAsync(v => v.ProjectCode == id)
+                ?? throw new ObjectNotFoundException();
+
+            return project;
         }
 
-        public async Task<List<Project>> Read(Func<Project, bool> func)
+        public async Task<List<Project>> ReadAsync(Func<Project, bool> func)
         {
-            List<Project> list = new List<Project>();
-            foreach (Project item in db.Projects)
-                if (func(item))
-                    list.Add(item);
-            return list;
-           
+            // EF Core לא תומך ב־Func מסונכרנת בבסיס נתונים, לכן נטען קודם ל־List
+            var allProjects = await db.Projects.ToListAsync();
+            return allProjects.Where(func).ToList();
         }
 
-        public async Task<List<Project>> ReadAll() => db.Projects.ToList();
-       
-        public void Update(Project item)
+        public async Task<List<Project>> ReadAllAsync()
         {
-            try
-            {
-                var i = ReadAll().Result.FindIndex(v => v.ProjectCode == item.ProjectCode);
-                if (i >= 0)
-                {
-                    db.Projects.ToList<Project>()[i] = item;
-                    db.SaveChanges();
-                }
-
-            }
-            catch { Console.WriteLine("Project not found"); }
+            return await db.Projects.ToListAsync();
         }
 
+        public async Task UpdateAsync(Project item)
+        {
+            var project = await db.Projects
+                .FirstOrDefaultAsync(v => v.ProjectCode == item.ProjectCode);
 
-        //public void Create(Project item)
-        //{
-        //    throw new NotImplementedException();
-        //}
+            if (project == null)
+                throw new Exception("Project not found");
 
+            // עדכון שדות
+            project.ProjectName = item.ProjectName;
+            project.ProjectManagerCode = item.ProjectManagerCode;
+            project.DomainCode = item.DomainCode;
 
-
-        //public void Delete(Project item)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public Task<Project> Read(int id)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-
-
-        //public Task<List<Project>> Read(Func<Project, bool> func)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public Task<List<Project>> ReadAll()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-
-        //public void Update(Project item)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //Task<Project> ICrud<Project>.Read(int id)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //Task<List<Project>> ICrud<Project>.ReadAll()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
+            await db.SaveChangesAsync();
+        }
     }
 }

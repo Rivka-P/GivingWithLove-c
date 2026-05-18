@@ -5,7 +5,6 @@ using Dal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl.BLServices
@@ -18,7 +17,6 @@ namespace Bl.BLServices
             this.Project = dal.Project;
         }
 
-
         private Project Convert(BlProjectModel s)
         {
             return new Project()
@@ -27,20 +25,20 @@ namespace Bl.BLServices
                 ProjectName = s.ProjectName,
                 ProjectManagerCode = s.ProjectManagerCode,
                 DomainCode = s.DomainCode
-             
-    };
+            };
         }
+
         private BlProjectModel Convert(Project s)
         {
             return new BlProjectModel()
             {
-
                 ProjectCode = s.ProjectCode,
                 ProjectName = s.ProjectName,
                 ProjectManagerCode = s.ProjectManagerCode,
-                DomainCode = s.DomainCode                
+                DomainCode = s.DomainCode
             };
         }
+
         private List<BlProjectModel> Convert(List<Project> c)
         {
             List<BlProjectModel> list = new List<BlProjectModel>();
@@ -51,44 +49,44 @@ namespace Bl.BLServices
             return list;
         }
 
-        public void Create(BlProjectModel item)
+        public async Task CreateAsync(BlProjectModel item)
         {
-            Project.Create(Convert(item));
+            await Project.CreateAsync(Convert(item));
         }
 
-        public void Delete(BlProjectModel item)
+        public async Task DeleteAsync(BlProjectModel item)
         {
-            Project.Delete(Convert(item));
-        }
-        public void Update(BlProjectModel item)
-        {
-            Project.Update(Convert(item));
+            await Project.DeleteAsync(Convert(item));
         }
 
-        public async Task<BlProjectModel> Read(int id)
+        public async Task UpdateAsync(BlProjectModel item)
         {
-            try { return Convert(Project.Read(id).Result); }
-            catch (ObjectNotFoundException e)
+            await Project.UpdateAsync(Convert(item));
+        }
+
+        public async Task<BlProjectModel> ReadAsync(int id)
+        {
+            try
+            {
+                var data = await Project.ReadAsync(id);
+                return Convert(data);
+            }
+            catch (ObjectNotFoundException)
             {
                 return null;
             }
         }
 
-        public async Task<List<BlProjectModel>> Read(Func<BlProjectModel, bool> func)
+        public async Task<List<BlProjectModel>> ReadAsync(Func<BlProjectModel, bool> func)
         {
-            List<BlProjectModel> list = Convert(Project.Read((Func<Project, bool>)func).Result);
-            return list;
+            var allData = await Project.ReadAllAsync();
+            return allData.Select(Convert).Where(func).ToList();
         }
 
-        public async Task<List<BlProjectModel>> ReadAll()
+        public async Task<List<BlProjectModel>> ReadAllAsync()
         {
-            List<BlProjectModel> list = new List<BlProjectModel>();
-
-            Project.ReadAll().Result.ForEach(item => { list.Add(Convert(item)); });
-
-            return list;
+            var allData = await Project.ReadAllAsync();
+            return allData.Select(Convert).ToList();
         }
-
-       
     }
 }
