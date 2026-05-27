@@ -13,3 +13,33 @@ D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\refint\Dal.dll
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.pdb
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
 D:\RivkyPinter\GWL_Project\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.deps.json
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.sourcelink.json
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\refint\Dal.dll
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.pdb
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
+D:\givingWithLove\New folder (3)\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.deps.json
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.dll
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\bin\Debug\net8.0\Dal.pdb
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.sourcelink.json
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.dll
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\refint\Dal.dll
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.pdb
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
+D:\givingWithLove\ב סיון c#\GivingWithLove-c\Dal\obj\Debug\net8.0\ref\Dal.dll

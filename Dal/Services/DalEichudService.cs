@@ -61,9 +61,7 @@ namespace Dal.Services
         {
             Eichud e = dbm.Eichuds.ToList().Find(x => x.EichudCode == id) ?? throw new ObjectNotFoundException  ();
             return e;
-
         }
-
 
         //public object Read(Bl.BLModels.BlEichudModel item)
         //{

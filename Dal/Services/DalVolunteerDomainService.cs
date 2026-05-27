@@ -21,15 +21,15 @@ namespace Dal.Services
             if (volunteerDomain == null)
                 throw new ArgumentNullException("volunteerDomain is null");
             else
-                try
-                {
+                //try
+                //{
                     mydb.VolunteerDomains.Add(volunteerDomain);
                     mydb.SaveChanges();
-                }
-                catch
-                {
-                    throw new Exception();
-                }
+                //}
+                //catch
+                //{
+                //    throw new Exception();
+                //}
         }
 
        
@@ -56,6 +56,7 @@ namespace Dal.Services
              VolunteerDomain vm =  mydb.VolunteerDomains.ToList().Find(v => v.VolunteerCode == id)?? throw new ObjectNotFoundException();
             return vm;
         }
+
         public async Task<List<VolunteerDomain>> ReadAll()
         {
             return mydb.VolunteerDomains.ToList();

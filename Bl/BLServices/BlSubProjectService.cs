@@ -18,7 +18,7 @@ namespace Bl.BLServices
             this.SubProject = dal.SubProject;
         }
 
-        private SubProject Convert(BlSubProjectModel s)
+        public SubProject Convert(BlSubProjectModel s)
         {
             return new SubProject() {
                 SubProjectCode = s.SubProjectCode,
@@ -28,7 +28,7 @@ namespace Bl.BLServices
                 EstimatedCost = s.EstimatedCost
             };
         }
-        private BlSubProjectModel Convert(SubProject s)
+        public BlSubProjectModel Convert(SubProject s)
         {
             return new BlSubProjectModel() {
                 SubProjectCode = s.SubProjectCode,
@@ -38,7 +38,7 @@ namespace Bl.BLServices
                 EstimatedCost = s.EstimatedCost
             };
         }
-        private List<BlSubProjectModel> Convert(List<SubProject> c)
+        public List<BlSubProjectModel> Convert(List<SubProject> c)
         {
             List<BlSubProjectModel> list = new List<BlSubProjectModel>();
             foreach (var item in c)

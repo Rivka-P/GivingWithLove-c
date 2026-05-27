@@ -2680,23 +2680,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\פינטר רבקי\\.nuget\\packages\\": {},
+    "C:\\Users\\גולדמן אתי\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\Bl.csproj",
+      "projectUniqueName": "D:\\givingWithLove\\ב סיון c#\\GivingWithLove-c\\Bl\\Bl.csproj",
       "projectName": "Bl",
-      "projectPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\Bl.csproj",
-      "packagesPath": "C:\\Users\\פינטר רבקי\\.nuget\\packages\\",
-      "outputPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Bl\\obj\\",
+      "projectPath": "D:\\givingWithLove\\ב סיון c#\\GivingWithLove-c\\Bl\\Bl.csproj",
+      "packagesPath": "C:\\Users\\גולדמן אתי\\.nuget\\packages\\",
+      "outputPath": "D:\\givingWithLove\\ב סיון c#\\GivingWithLove-c\\Bl\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\פינטר רבקי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\גולדמן אתי\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2712,8 +2712,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj": {
-              "projectPath": "D:\\RivkyPinter\\GWL_Project\\GivingWithLove-c\\Dal\\Dal.csproj"
+            "D:\\givingWithLove\\ב סיון c#\\GivingWithLove-c\\Dal\\Dal.csproj": {
+              "projectPath": "D:\\givingWithLove\\ב סיון c#\\GivingWithLove-c\\Dal\\Dal.csproj"
             }
           }
         }

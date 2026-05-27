@@ -6,7 +6,7 @@ namespace Dal.Models;
 
 public partial class Project
 {
-     public int ProjectCode { get; set; }
+    public int ProjectCode { get; set; }
     public string ProjectName { get; set; }
     public  int ? ProjectManagerCode { get; set; }
     public int? DomainCode { get; set; }
@@ -19,7 +19,7 @@ public partial class Project
 
     public virtual ICollection<SubProject> SubProjects { get; set; } = new List<SubProject>();
 
-    public virtual ICollection<VolunteerDomain> VolunteerDomains { get; set; } = new List<VolunteerDomain>();
+    public virtual ICollection<VolunteerDomain> VolunteerDomain { get; set; } = new List<VolunteerDomain>();
 
     public virtual ICollection<Volunteering> Volunteerings { get; set; } = new List<Volunteering>();
 }
